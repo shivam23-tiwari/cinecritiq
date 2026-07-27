@@ -1,0 +1,36 @@
+--- src/pages/Community.tsx
++++ src/pages/Community.tsx
+@@ -28,7 +28,7 @@
+         let usersData = snap.docs
+           .map(doc => ({ id: doc.id, ...doc.data() } as UserData))
+           .filter(u => u.id !== user?.uid); 
+         
+-        const usersWithStats = await Promise.all(usersData.map(async (u) => {
++        const usersWithStats = [];
++        for (const u of usersData) {
+           try {
+             const actionsSnap = await getDocs(collection(db, `users/${u.id}/movieActions`));
+@@ -53,14 +53,15 @@
+             const score = watched * 2 + liked * 3 + rated * 5;
+             
+-            return {
++            usersWithStats.push({
+               ...u,
+               stats: { watched, liked, rated, score },
+               favoriteMovies
+-            };
++            });
+           } catch (e) {
+             console.error(`Error fetching stats for user ${u.id}:`, e);
+-            return {
++            usersWithStats.push({
+               ...u,
+               stats: { watched: 0, liked: 0, rated: 0, score: 0 },
+               favoriteMovies: []
+-            };
++            });
+           }
+-        }));
++        }
+ 
+         usersWithStats.sort((a, b) => {

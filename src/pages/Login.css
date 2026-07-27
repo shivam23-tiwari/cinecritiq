@@ -1,0 +1,306 @@
+:root {
+  --bg: #0b0a09;
+  --glow: #ffd27a;
+  --glow-soft: #f6b94d;
+  --card-bg: #1a1822;
+  --card-border: #2c2a38;
+  --text-main: #f2f0ec;
+  --text-muted: #8b8790;
+  --accent-1: #7c6cf6;
+  --accent-2: #4f46e5;
+}
+
+.lamp-login-body {
+  font-family: 'Inter', sans-serif;
+  background: radial-gradient(ellipse at 30% 20%, #16110a 0%, var(--bg) 55%, #000 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+}
+
+.lamp-login-body * { box-sizing: border-box; }
+
+.lamp-hint {
+  position: absolute;
+  top: 150px;
+  left: 60%;
+  color: var(--text-muted);
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.lamp-stage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(24px, 8vw, 120px);
+  flex-wrap: wrap;
+  width: min(1100px, 92vw);
+  padding: 40px 0;
+}
+
+/* ---------- LAMP ---------- */
+.lamp-wrap {
+  position: relative;
+  width: 260px;
+  height: 460px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.lamp-cone {
+  position: absolute;
+  top: 92px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 130px solid transparent;
+  border-right: 130px solid transparent;
+  border-top: 340px solid rgba(246, 185, 77, 0);
+  transition: border-top-color 0.9s ease;
+  pointer-events: none;
+  filter: blur(2px);
+}
+
+.lamp-wrap.on .lamp-cone {
+  border-top-color: rgba(246, 185, 77, 0.14);
+}
+
+.lamp-shade {
+  position: relative;
+  width: 130px;
+  height: 34px;
+  background: #17151c;
+  border-radius: 4px 4px 50% 50% / 4px 4px 100% 100%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.6);
+  z-index: 2;
+  transition: box-shadow 0.6s ease;
+}
+
+.lamp-wrap.on .lamp-shade {
+  box-shadow: 0 0 40px 12px rgba(255, 210, 122, 0.55), 0 2px 6px rgba(0,0,0,0.6);
+}
+
+.lamp-bulb-glow {
+  position: absolute;
+  top: 26px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--glow);
+  opacity: 0;
+  filter: blur(1px);
+  box-shadow: 0 0 0 rgba(255,210,122,0);
+  transition: opacity 0.6s ease, box-shadow 0.6s ease;
+  z-index: 3;
+}
+
+.lamp-wrap.on .lamp-bulb-glow {
+  opacity: 1;
+  box-shadow: 0 0 60px 24px rgba(255, 210, 122, 0.65);
+}
+
+.lamp-pole {
+  width: 4px;
+  flex: 1;
+  background: linear-gradient(to bottom, #2a2830, #1c1a20);
+  z-index: 1;
+}
+
+.lamp-base {
+  width: 90px;
+  height: 8px;
+  background: #1c1a20;
+  border-radius: 3px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.6);
+}
+
+.lamp-pull {
+  position: absolute;
+  top: 118px;
+  left: 58%;
+  width: 2px;
+  height: 90px;
+  background: #4a4650;
+  transform-origin: top center;
+  cursor: pointer;
+  animation: none;
+}
+
+.lamp-pull.swing {
+  animation: lamp-swing 0.9s ease;
+}
+
+.lamp-pull-grip {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 16px;
+  border-radius: 50%;
+  background: #4a4650;
+}
+
+.lamp-pull:hover .lamp-pull-grip,
+.lamp-pull:hover {
+  background: #635e6d;
+}
+
+@keyframes lamp-swing {
+  0% { transform: rotate(0deg); }
+  20% { transform: rotate(10deg); }
+  45% { transform: rotate(-7deg); }
+  70% { transform: rotate(4deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/* ---------- CARD ---------- */
+.lamp-card {
+  width: 320px;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 18px;
+  padding: 32px 28px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+  opacity: 0;
+  transform: translateY(14px) scale(0.98);
+  pointer-events: none;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  flex-shrink: 0;
+}
+
+.lamp-card.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+}
+
+.lamp-card h2 {
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-main);
+  font-size: 22px;
+  margin: 0 0 22px;
+  text-align: center;
+}
+
+.lamp-field {
+  position: relative;
+  margin-bottom: 14px;
+}
+
+.lamp-field input {
+  width: 100%;
+  padding: 12px 14px;
+  background: #221f2a;
+  border: 1px solid #322f3c;
+  border-radius: 9px;
+  color: var(--text-main);
+  font-size: 13.5px;
+  font-family: 'Inter', sans-serif;
+}
+
+.lamp-field input::placeholder { color: var(--text-muted); }
+.lamp-field input:focus { outline: none; border-color: var(--accent-1); }
+
+.lamp-eye {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: var(--text-muted);
+  font-size: 13px;
+  user-select: none;
+}
+
+.lamp-forgot {
+  text-align: right;
+  margin: -6px 0 18px;
+}
+
+.lamp-forgot a {
+  color: var(--accent-1);
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.lamp-btn-primary {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 9px;
+  background: linear-gradient(135deg, var(--accent-1), var(--accent-2));
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.4px;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+}
+
+.lamp-btn-primary:hover { filter: brightness(1.08); }
+
+.lamp-divider {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 11px;
+  margin: 16px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.lamp-btn-google {
+  width: 100%;
+  padding: 11px;
+  border-radius: 9px;
+  border: 1px solid var(--card-border);
+  background: #f2f0ec;
+  color: #24222b;
+  font-weight: 600;
+  font-size: 13.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.lamp-switch-mode {
+  text-align: center;
+  margin-top: 18px;
+  font-size: 12.5px;
+  color: var(--text-muted);
+}
+
+.lamp-switch-mode span {
+  color: var(--accent-1);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.lamp-message {
+  margin-top: 14px;
+  text-align: center;
+  font-size: 12.5px;
+  min-height: 16px;
+}
+
+.lamp-message.error { color: #ff8080; }
+.lamp-message.success { color: #7ee0a3; }
+
+@media (max-width: 640px) {
+  .lamp-wrap { width: 200px; height: 340px; }
+  .lamp-card { width: 88vw; }
+}

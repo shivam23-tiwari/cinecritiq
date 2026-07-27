@@ -1,0 +1,1702 @@
+[
+  {
+    "adult": true,
+    "backdrop_path": "/rqbCbjB19amtOtFQbb3K2lgm2zv.jpg",
+    "genre_ids": [
+      16,
+      10765,
+      10759
+    ],
+    "id": 1429,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "進撃の巨人",
+    "overview": "100 years ago, the last remnants of humanity were forced to retreat behind the towering walls of a fortified city to escape the massive, man-eating Titans that roamed the land outside their fortress. Only the members of the Scouting Legion dared to stray beyond the safety of the walls – but even those brave warriors seldom returned alive. Those within the city clung to the illusion of a peaceful existence until the day that dream was shattered, and their slim chance at survival was reduced to one horrifying choice: kill – or be devoured!",
+    "popularity": 21.7549,
+    "poster_path": "/hTP1DtLGFamjfu8WqjnuQdP1n4i.jpg",
+    "first_air_date": "2013-04-07",
+    "softcore": true,
+    "name": "Attack on Titan",
+    "vote_average": 8.683,
+    "vote_count": 7546
+  },
+  {
+    "adult": true,
+    "backdrop_path": "/99Y64VK0KwyRWfaW6VdpDfPKNMo.jpg",
+    "genre_ids": [
+      10759,
+      10765,
+      16
+    ],
+    "id": 35935,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "剣風伝奇ベルセルク",
+    "overview": "Guts, a wandering mercenary, joins the Band of the Hawk after being defeated in a duel by Griffith, the group's leader and founder. Together, they dominate every battle, but something menacing lurks in the shadows.",
+    "popularity": 11.4551,
+    "poster_path": "/xctRBSZzvoHDHz38ZZUGxRYetvG.jpg",
+    "first_air_date": "1997-10-08",
+    "softcore": true,
+    "name": "Berserk",
+    "vote_average": 8.497,
+    "vote_count": 816
+  },
+  {
+    "adult": true,
+    "backdrop_path": "/o0NsbcIvsllg6CJX0FBFY8wWbsn.jpg",
+    "genre_ids": [
+      10759,
+      16,
+      10765
+    ],
+    "id": 30984,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "BLEACH",
+    "overview": "For as long as he can remember, Ichigo Kurosaki has been able to see ghosts. But when he meets Rukia, a Soul Reaper who battles evil spirits known as Hollows, he finds his life is changed forever. Now, with a newfound wealth of spiritual energy, Ichigo discovers his true calling: to protect the living and the dead from evil.",
+    "popularity": 54.0916,
+    "poster_path": "/5iVUUnE2tgBPypACYNobCKHagfV.jpg",
+    "first_air_date": "2004-10-05",
+    "softcore": true,
+    "name": "Bleach",
+    "vote_average": 8.363,
+    "vote_count": 2175
+  },
+  {
+    "adult": true,
+    "backdrop_path": "/A4PHx94G7mvM3b8vsDJ5HEaQ6uv.jpg",
+    "genre_ids": [
+      16,
+      10759,
+      10765,
+      37
+    ],
+    "id": 30991,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "カウボーイビバップ",
+    "overview": "In 2071, roughly fifty years after an accident with a hyperspace gateway made the Earth almost uninhabitable, humanity has colonized most of the rocky planets and moons of the Solar System. Amid a rising crime rate, the Inter Solar System Police (ISSP) set up a legalized contract system, in which registered bounty hunters, also referred to as \"Cowboys\", chase criminals and bring them in alive in return for a reward.",
+    "popularity": 15.6496,
+    "poster_path": "/xDiXDfZwC6XYC6fxHI1jl3A3Ill.jpg",
+    "first_air_date": "1998-04-03",
+    "softcore": true,
+    "name": "Cowboy Bebop",
+    "vote_average": 8.499,
+    "vote_count": 1972
+  },
+  {
+    "adult": true,
+    "backdrop_path": "/koBa94NxTaGe2FoDzlXMuJptsv0.jpg",
+    "genre_ids": [
+      16,
+      9648,
+      10765
+    ],
+    "id": 13916,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "DEATH NOTE",
+    "overview": "Light Yagami is an ace student with great prospects—and he’s bored out of his mind. But all that changes when he finds the Death Note, a notebook dropped by a rogue Shinigami death god. Any human whose name is written in the notebook dies, and Light has vowed to use the power of the Death Note to rid the world of evil. But will Light succeed in his noble goal, or will the Death Note turn him into the very thing he fights against?",
+    "popularity": 35.6352,
+    "poster_path": "/tCZFfYTIwrR7n94J6G14Y4hAFU6.jpg",
+    "first_air_date": "2006-10-04",
+    "softcore": true,
+    "name": "Death Note",
+    "vote_average": 8.623,
+    "vote_count": 5001
+  },
+  {
+    "adult": true,
+    "backdrop_path": "/3GQKYh6Trm8pxd2AypovoYQf4Ay.jpg",
+    "genre_ids": [
+      16,
+      10759,
+      10765
+    ],
+    "id": 85937,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "鬼滅の刃",
+    "overview": "After a demon attack leaves his family slain and his sister cursed, Tanjiro embarks upon a perilous journey to find a cure and avenge those he's lost.",
+    "popularity": 12.9636,
+    "poster_path": "/xUfRZu2mi8jH6SzQEJGP6tjBuYj.jpg",
+    "first_air_date": "2019-04-06",
+    "softcore": true,
+    "name": "Demon Slayer: Kimetsu no Yaiba",
+    "vote_average": 8.639,
+    "vote_count": 7337
+  },
+  {
+    "adult": true,
+    "backdrop_path": "/ydf1CeiBLfdxiyNTpskM0802TKl.jpg",
+    "genre_ids": [
+      16,
+      10765,
+      10759
+    ],
+    "id": 12971,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "ドラゴンボールゼット",
+    "overview": "Now happily married and with a son, martial arts champion Goku must defend Earth from a series of extraterrestrial invaders bent on destruction.",
+    "popularity": 57.9791,
+    "poster_path": "/yfyToia25GnvjY7FPAGaCm3lKRc.jpg",
+    "first_air_date": "1989-04-26",
+    "softcore": true,
+    "name": "Dragon Ball Z",
+    "vote_average": 8.373,
+    "vote_count": 4924
+  },
+  {
+    "adult": true,
+    "backdrop_path": "/zr1MDQCPVB5uJEHxiO6Tukn4OjH.jpg",
+    "genre_ids": [
+      16,
+      35,
+      18
+    ],
+    "id": 60863,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "ハイキュー!!",
+    "overview": "Inspired by a small-statured pro volleyball player, Hinata creates a volleyball team in his last year of middle school. Unfortunately the team is matched up against the \"King of the Court\" Tobio Kageyama’s team in their first tournament and inevitably lose. After the crushing defeat, Hinata vows to surpass Kageyama After entering high school, Hinata joins the volleyball team only to find that Tobio has also joined.",
+    "popularity": 22.494,
+    "poster_path": "/8WEr48swcqe89Zsy5sdrGCASlIg.jpg",
+    "first_air_date": "2014-04-06",
+    "softcore": true,
+    "name": "Haikyu!!",
+    "vote_average": 8.6,
+    "vote_count": 1528
+  },
+  {
+    "adult": true,
+    "backdrop_path": "/575sxZXNNulSlIz7DvtWH5r4lkC.jpg",
+    "genre_ids": [
+      10765,
+      10759,
+      16,
+      35,
+      18
+    ],
+    "id": 45952,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "HUNTER×HUNTER",
+    "overview": "Gon Freecss discovers that the father he had always been told was dead was actually alive the whole time. Ging is a famous Hunter: an individual who has proven themself an elite member of humanity. Gon becomes determined to follow in his father's footsteps, pass the rigorous Hunter Examination.",
+    "popularity": 15.5143,
+    "poster_path": "/eobAuhCJA8oRp814V67WhezVXtQ.jpg",
+    "first_air_date": "1999-10-16",
+    "softcore": true,
+    "name": "Hunter x Hunter",
+    "vote_average": 8.386,
+    "vote_count": 220
+  },
+  {
+    "adult": true,
+    "backdrop_path": "/lthkKBLe1rX6iThgVFg22O02sJw.jpg",
+    "genre_ids": [
+      16,
+      10759,
+      10765
+    ],
+    "id": 95479,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "呪術廻戦",
+    "overview": "Yuji Itadori is a boy with tremendous physical strength, though he lives a completely ordinary high school life. One day, to save a classmate who has been attacked by curses, he eats the finger of Ryomen Sukuna, taking the curse into his own soul. From then on, he shares one body with Ryomen Sukuna. Guided by the most powerful of sorcerers, Satoru Gojo, Itadori is admitted to Tokyo Jujutsu High School, an organization that fights the curses... and thus begins the heroic tale of a boy who became a curse to exorcise a curse, a life from which he could never turn back.",
+    "popularity": 66.8978,
+    "poster_path": "/fHpKWq9ayzSk8nSwqRuaAUemRKh.jpg",
+    "first_air_date": "2020-10-03",
+    "softcore": true,
+    "name": "JUJUTSU KAISEN",
+    "vote_average": 8.581,
+    "vote_count": 4547
+  },
+  {
+    "adult": true,
+    "backdrop_path": "/ol0H2DGp4ifBHA4JDlCpwJWxnY2.jpg",
+    "genre_ids": [
+      10759,
+      16,
+      10765
+    ],
+    "id": 65930,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "僕のヒーローアカデミア",
+    "overview": "After he saves a bully from a Villain, a normal student is granted a superpower that allows him to attend a high school training academy for Heroes.",
+    "popularity": 13.0251,
+    "poster_path": "/phuYuzqWW9ru8EA3HVjE9W2Rr3M.jpg",
+    "first_air_date": "2016-04-03",
+    "softcore": true,
+    "name": "My Hero Academia",
+    "vote_average": 8.6,
+    "vote_count": 5327
+  },
+  {
+    "adult": true,
+    "backdrop_path": "/5F0HVEgkgP99fEWDjPyikGt9jQi.jpg",
+    "genre_ids": [
+      16,
+      10759,
+      10765
+    ],
+    "id": 46260,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "ナルト",
+    "overview": "Naruto Uzumaki, a mischievous adolescent ninja, struggles as he searches for recognition and dreams of becoming the Hokage, the village's leader and strongest ninja.",
+    "popularity": 51.5742,
+    "poster_path": "/1GVfX7kqIbQBp38Riiy1QLQkhJQ.jpg",
+    "first_air_date": "2002-10-03",
+    "softcore": true,
+    "name": "Naruto",
+    "vote_average": 8.363,
+    "vote_count": 6045
+  },
+  {
+    "adult": true,
+    "backdrop_path": "/z0YhJvomqedHF85bplUJEotkN5l.jpg",
+    "genre_ids": [
+      16,
+      10759,
+      10765
+    ],
+    "id": 31910,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "ナルト 疾風伝",
+    "overview": "After 2 and a half years Naruto finally returns to his village of Konoha, and sets about putting his ambitions to work. It will not be easy though as he has amassed a few more dangerous enemies, in the likes of the shinobi organization; Akatsuki.",
+    "popularity": 38.2183,
+    "poster_path": "/kV27j3Nz4d5z8u6mN3EJw9RiLg2.jpg",
+    "first_air_date": "2007-02-15",
+    "softcore": true,
+    "name": "Naruto Shippūden",
+    "vote_average": 8.532,
+    "vote_count": 8709
+  },
+  {
+    "adult": true,
+    "backdrop_path": "/qD211Hb5XwFxrszzBBe5EUYJerh.jpg",
+    "genre_ids": [
+      10759,
+      10765
+    ],
+    "id": 111110,
+    "origin_country": [
+      "US"
+    ],
+    "original_language": "en",
+    "original_name": "ONE PIECE",
+    "overview": "With his straw hat and ragtag crew, young pirate Monkey D. Luffy goes on an epic voyage for treasure.",
+    "popularity": 31.0709,
+    "poster_path": "/blWCPEqDGLBuLB9u89CxP9ORQP4.jpg",
+    "first_air_date": "2023-08-31",
+    "softcore": true,
+    "name": "ONE PIECE",
+    "vote_average": 8.119,
+    "vote_count": 1849
+  },
+  {
+    "adult": true,
+    "backdrop_path": "/60TX5aaN7DHZNOEbRdTkag2J5qs.jpg",
+    "genre_ids": [
+      16,
+      10759,
+      10765
+    ],
+    "id": 60572,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "ポケットモンスター",
+    "overview": "Join Ash accompanied by his partner Pikachu, as he travels through many regions, meets new friends and faces new challenges on his quest to become a Pokémon Master.",
+    "popularity": 102.6625,
+    "poster_path": "/lP4zwr0F7hWTbAFltfoFTc2AxRG.jpg",
+    "first_air_date": "1997-04-01",
+    "softcore": true,
+    "name": "Pokémon",
+    "vote_average": 7.989,
+    "vote_count": 2210
+  },
+  {
+    "adult": true,
+    "backdrop_path": null,
+    "genre_ids": [
+      16
+    ],
+    "id": 45395,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "en",
+    "original_name": "Adventure Kid",
+    "overview": "",
+    "popularity": 0.0387,
+    "poster_path": null,
+    "first_air_date": "",
+    "softcore": true,
+    "name": "Adventure Kid",
+    "vote_average": 2,
+    "vote_count": 1
+  },
+  {
+    "adult": true,
+    "backdrop_path": "/4Od62fwF13UtxJbJDP4DfspjP4P.jpg",
+    "genre_ids": [
+      16,
+      10749
+    ],
+    "id": 62114,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "アキバ系彼女",
+    "overview": "Shindo Nikita has a secret that he has been hiding for a long time—he loves hentai and H-games. He enters \"The Alternative Trivia Research Club\", where the first of his many sexual encounters takes place. Despite that, he finds out that both of his foster sisters are in love with him, and he has to make a choice—who he really loves.",
+    "popularity": 0,
+    "poster_path": "/ky0zu39lk63MBCbUkI4204FTDcB.jpg",
+    "first_air_date": "2004-07-25",
+    "softcore": true,
+    "name": "Akiba Girls",
+    "vote_average": 5.8,
+    "vote_count": 4
+  },
+  {
+    "adult": true,
+    "backdrop_path": "/bZLQZKGyvLIfo4o3vIhS2d9Q1yJ.jpg",
+    "genre_ids": [
+      16
+    ],
+    "id": 199947,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "淫獣エイリアン",
+    "overview": "The all female crew of the transport ship Muse is on a mission in deep space. They pick up an SOS signal and discover a derelict space cruiser where all the women have died mysteriously. They take the only survivor, a young woman named Flair, and detonate the ghost ship. However, the danger is just beginning. With Flair on the Muse, the romances between the women begin to take a new turn. One by one, the crew members are attacked by a mysterious alien presence, desperate to find a way to reproduce with human women.",
+    "popularity": 0,
+    "poster_path": "/nAsXLHQEoHTiwh3W7zUeFEZS7Kg.jpg",
+    "first_air_date": "1997-01-24",
+    "softcore": true,
+    "name": "Alien from the Darkness",
+    "vote_average": 0,
+    "vote_count": 0
+  },
+  {
+    "adult": true,
+    "backdrop_path": "/38g8BjnbRpxdTER5guYi6ANWsjk.jpg",
+    "genre_ids": [
+      10765,
+      18
+    ],
+    "id": 2426,
+    "origin_country": [
+      "US"
+    ],
+    "original_language": "en",
+    "original_name": "Angel",
+    "overview": "The vampire Angel, cursed with a soul, moves to Los Angeles and aids people with supernatural-related problems while questing for his own redemption. A spin-off from Buffy the Vampire Slayer.",
+    "popularity": 24.8672,
+    "poster_path": "/7dRU3wdMJba3PedicxEYSks0oJx.jpg",
+    "first_air_date": "1999-10-05",
+    "softcore": true,
+    "name": "Angel",
+    "vote_average": 7.866,
+    "vote_count": 1008
+  },
+  {
+    "adult": true,
+    "backdrop_path": "/A5RBliYYmvrHQguBbaCVhqySqmW.jpg",
+    "genre_ids": [
+      16
+    ],
+    "id": 76716,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "エンジェルブレイド",
+    "overview": "In the near future, the earth is covered in a chemical smog and Dark Mother, evil villainess, leads a secret organization devoted to world domination. But there is a masked heroine named Angel Blade, a beautiful woman who fights the evil of Dark Mother.",
+    "popularity": 0,
+    "poster_path": "/utfysFFi1d5JkVhQ3xJmmfKcuYV.jpg",
+    "first_air_date": "2001-12-14",
+    "softcore": true,
+    "name": "Angel Blade",
+    "vote_average": 8.6,
+    "vote_count": 9
+  },
+  {
+    "adult": true,
+    "backdrop_path": "/x2AE6Lei9vJIhS6cxLOhDForA63.jpg",
+    "genre_ids": [
+      16,
+      10765,
+      9648
+    ],
+    "id": 66075,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "バイブルブラック",
+    "overview": "At a harmless looking College, the teachers and staff are practicing a dark religion. By devoting their bodies to perversity, they chant their dark spells and control the lusts of the student body.",
+    "popularity": 0,
+    "poster_path": "/kWyyCyLnPU0eDjrdhFynR4QddjR.jpg",
+    "first_air_date": "2001-07-21",
+    "softcore": true,
+    "name": "Bible Black",
+    "vote_average": 7.579,
+    "vote_count": 38
+  },
+  {
+    "adult": true,
+    "backdrop_path": null,
+    "genre_ids": [],
+    "id": 308478,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "ぼくのぴこ",
+    "overview": "Boku no Pico follows a young man named Tamotsu, or \"Mokkun\", who befriends Pico, a lonely, effeminate boy, leading to the two of them engaging in a sexual relationship.",
+    "popularity": 1.4332,
+    "poster_path": "/tFNpNhT3S8HgShXlI76fGNdtHrQ.jpg",
+    "first_air_date": "2006-09-07",
+    "softcore": true,
+    "name": "Boku no Pico",
+    "vote_average": 0,
+    "vote_count": 0
+  },
+  {
+    "adult": true,
+    "backdrop_path": "/hneR4QaOcqAI5s1A6yqB4sSRitQ.jpg",
+    "genre_ids": [
+      16
+    ],
+    "id": 91286,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "緊縛の館 略奪",
+    "overview": "Yukio Mimura and Reika Uehara live in there family's mansion peacefully. They have feelings for each other and are sure that they will live happy together. One night, Hayato Mimura, their cousin, arrives saying he wants them out of the house. Yukio doesn't agree with this and begins to think of any way they could settle this. Hayate comes up with a contest that their fathers did to win the house before them. That contest is to see who can be the first one to break Reika. Whoever breaks her, will be the winner and keeper of the house.",
+    "popularity": 0,
+    "poster_path": "/9X3RsRHhBtkmxpGhLmI4zIuLoi0.jpg",
+    "first_air_date": "2000-02-18",
+    "softcore": true,
+    "name": "Bondage Mansion",
+    "vote_average": 5,
+    "vote_count": 4
+  },
+  {
+    "adult": true,
+    "backdrop_path": "/52sp0vPhLOWrZ1QoZIWiapronM.jpg",
+    "genre_ids": [
+      18
+    ],
+    "id": 273240,
+    "origin_country": [
+      "US"
+    ],
+    "original_language": "en",
+    "original_name": "Off Campus",
+    "overview": "Hannah Wells tutors hockey captain Garrett Graham to win over her crush. Their deal becomes real connection as they face their pasts. Friends Logan, Dean, Tucker, and Allie navigate college life and love.",
+    "popularity": 106.0708,
+    "poster_path": "/cbODFqkcmRgrYH8NkG4Q4Hcg8Z1.jpg",
+    "first_air_date": "2026-05-13",
+    "softcore": true,
+    "name": "Off Campus",
+    "vote_average": 8.918,
+    "vote_count": 709
+  },
+  {
+    "adult": true,
+    "backdrop_path": "/18XBD1kxsOMcDNZtx0EVx9Z5O1W.jpg",
+    "genre_ids": [
+      16,
+      10749,
+      35,
+      27
+    ],
+    "id": 166614,
+    "title": "Call Me Tonight",
+    "original_language": "ja",
+    "original_title": "コール・ミー・トゥナイト",
+    "overview": "Rumi, a phone sex operator making ends meet, falls for her most challenging client yet: Ryo, a young man who transforms into a monstrous beast when he's aroused. But Rumi’s not the only one with her eye on the cursed caller.",
+    "popularity": 0.8647,
+    "poster_path": "/3skYaQq2vXNG58BFNGZkRq2PNNy.jpg",
+    "release_date": "1986-07-28",
+    "softcore": true,
+    "video": false,
+    "vote_average": 4.3,
+    "vote_count": 12
+  },
+  {
+    "adult": true,
+    "backdrop_path": "/4oSwsitZPrlnTww4X4OB9hX6ZEf.jpg",
+    "genre_ids": [
+      16,
+      10765,
+      80
+    ],
+    "id": 87902,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "クール･ディバイシス",
+    "overview": "A set of Japanese animated stories revolving around various sexual perversions. In one, a rich young heir wires his house with video cameras in order to satisfy his longings for his sister. In another, a corrupt police detective uses mind-control drugs to hold a teenage girl as his sexual prisoner.",
+    "popularity": 0,
+    "poster_path": "/luqsXrROFlT5bUk0WsnSn9Bvcnw.jpg",
+    "first_air_date": "1995-04-25",
+    "softcore": true,
+    "name": "Cool Devices",
+    "vote_average": 7.7,
+    "vote_count": 9
+  },
+  {
+    "adult": true,
+    "backdrop_path": "/mjPf37HcGKMQQx5Yx1p8wN2Cy8o.jpg",
+    "genre_ids": [
+      16,
+      18
+    ],
+    "id": 44250,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "ダーク・シェル 檻の中の艶",
+    "overview": "At the end of World War II, after dividing up the nation, the countries that defeated Japan failed to rule the island. As a result, many independent powers were established. They developed a hatred of one another, leading the country into a never-ending spiral of civil war.\n\nFollowing a group of women under the close \"protection\" of soldiers, will they be able to return to the safety of their own territories... or are do they have more to fear from their protectors?",
+    "popularity": 0,
+    "poster_path": "/Ko66KsalJZutTCz9QZZ1aZKM1T.jpg",
+    "first_air_date": "2003-06-25",
+    "softcore": true,
+    "name": "Dark Shell",
+    "vote_average": 7.2,
+    "vote_count": 4
+  },
+  {
+    "adult": true,
+    "backdrop_path": "/1XnlcWlILbk4QrKlS7wIBL3KCQi.jpg",
+    "genre_ids": [
+      16
+    ],
+    "id": 103261,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "妖獣教室",
+    "overview": "100 million years ago, an ecological disaster drove the Demon Beasts from our world. Now they must breed with human females to create a new, hybrid creature who will clear the way for an invading horde. When 19-year-old Kayo is raped by a possessed lover, it's up to 19-year-old Interplanetary Mutual Observation Agent Muneto to save her from the terrifying creature to which she gives birth: A mutant, lust-driven Demon Beast!",
+    "popularity": 0,
+    "poster_path": "/bzt1SgjJr8fEukTsXckzZ6v1611.jpg",
+    "first_air_date": "1990-05-25",
+    "softcore": true,
+    "name": "Demon Beast Invasion",
+    "vote_average": 5.8,
+    "vote_count": 4
+  },
+  {
+    "adult": true,
+    "backdrop_path": "/j7FL6KfjEjrGSXt6peQw7U3VL0R.jpg",
+    "genre_ids": [
+      16,
+      10759,
+      35,
+      10762,
+      10765
+    ],
+    "id": 129959,
+    "origin_country": [
+      "US"
+    ],
+    "original_language": "en",
+    "original_name": "Kung Fu Panda: The Dragon Knight",
+    "overview": "Follow the adventures of Po, who partners up with a no-nonsense English knight named Wandering Blade to find a collection of four powerful weapons before a mysterious pair of weasels do, and save the world from destruction.",
+    "popularity": 10.0066,
+    "poster_path": "/7C9TKvU5dNyhvoG9kQvRFsg6vlA.jpg",
+    "first_air_date": "2022-07-14",
+    "softcore": true,
+    "name": "Kung Fu Panda: The Dragon Knight",
+    "vote_average": 7.486,
+    "vote_count": 255
+  },
+  {
+    "adult": true,
+    "backdrop_path": null,
+    "genre_ids": [
+      16,
+      35,
+      10765
+    ],
+    "id": 43850,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "エルフの若奥様",
+    "overview": "Follow along now: we've got a human (male, of course) and an elf (female, of course) and they want to get married. Naturally, this isn't going to go as planned... and it seems that we're in for some lessons on biology before we're done with this one.\n\nSo, they may have lots of love between them, but elf-wife Milfa and her human-hubby Kenji are still having considerable... um... trouble in the bedroom. So, after her husband trots off on his daily journey, Milfa sets off on a quest of her own!",
+    "popularity": 1.5135,
+    "poster_path": "/8r1To0jO4BSpDAvr47JxlD8eiCZ.jpg",
+    "first_air_date": "1995-08-25",
+    "softcore": true,
+    "name": "The Elven Bride",
+    "vote_average": 4.5,
+    "vote_count": 4
+  },
+  {
+    "adult": true,
+    "backdrop_path": "/pip5ShKgYj0ohErFqbmVHt9uEvY.jpg",
+    "genre_ids": [
+      16
+    ],
+    "id": 282650,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "冤罪",
+    "overview": "Guys, a young boy from a poor family gets caught for stealing candy from a Paris store.\n\nHowever, after being railroaded by a city detective named Guildias, Guys finds himself accused, convicted, and sentenced to life imprisonment for the murder of a man he never met.\n\nFrom that point on, most Enzai takes place inside a dark, claustrophobic, dirty prison, in there, Guys experiences humiliation and torture of various kinds, much of it involving sexual acts such as rape and forcible sodomy.",
+    "popularity": 0,
+    "poster_path": "/pomgDed7yUwo6qW9QDEHLXgzlzx.jpg",
+    "first_air_date": "2004-04-23",
+    "softcore": true,
+    "name": "Enzai",
+    "vote_average": 10,
+    "vote_count": 1
+  },
+  {
+    "adult": true,
+    "backdrop_path": "/umyeecrVfvqzj64z6pjoYsPWkA7.jpg",
+    "genre_ids": [
+      16,
+      18,
+      10765
+    ],
+    "id": 43777,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "ミネルバの剣士",
+    "overview": "Princess Diana runs away from an arranged marraige and straight into the arms of slave traders who capture her and she is forced to become a slave. She finds her long lost childhood friend/love there, who happens to be the sworn enemy of her families throne, and becomes his, but of course with the family wanting her back all is not ideal.",
+    "popularity": 0,
+    "poster_path": "/twAW5TUat5zO3XF27L9JX9UJ281.jpg",
+    "first_air_date": "1994-12-17",
+    "softcore": true,
+    "name": "Fencer of Minerva",
+    "vote_average": 5.9,
+    "vote_count": 9
+  },
+  {
+    "adult": true,
+    "backdrop_path": null,
+    "genre_ids": [],
+    "id": 156062,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "ふたりエッチ",
+    "overview": "A married couple's inexperience, sex life, family and friends is the focus of this manga adaptation. Every episode of the serial relates to the good times and bad times of being a man and a woman and the sex that comes with it.",
+    "popularity": 3.3876,
+    "poster_path": "/urLDGPMVlihzMrYJgFySEpLRQZV.jpg",
+    "first_air_date": "2011-07-29",
+    "softcore": true,
+    "name": "Futari Ecchi",
+    "vote_average": 3.2,
+    "vote_count": 4
+  },
+  {
+    "adult": true,
+    "backdrop_path": null,
+    "genre_ids": [],
+    "id": 323463,
+    "origin_country": [
+      "CN"
+    ],
+    "original_language": "zh",
+    "original_name": "G-taste",
+    "overview": "",
+    "popularity": 0.0143,
+    "poster_path": null,
+    "first_air_date": "1999-12-18",
+    "softcore": true,
+    "name": "G-taste",
+    "vote_average": 0,
+    "vote_count": 0
+  },
+  {
+    "adult": true,
+    "backdrop_path": "/73A148n9q7TKX9gBZj8WW0s4HVU.jpg",
+    "genre_ids": [
+      16,
+      35,
+      10765
+    ],
+    "id": 88806,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "まちカドまぞく",
+    "overview": "Awakening her dormant abilities as a devil one day, Yuuko Yoshida aka Shadow Mistress Yuuko, is entrusted with the mission to defeat the Light clan's shrine maiden, a magical girl, by her ancestor Lilith. Yuuko meets magical girl Momo Chiyoda through her classmate Anri Sada, and challenges her to a duel, but loses quickly due to her lack of strength.\n\nSince then, Yuuko has struggled with her role as a devil and her duel with Momo, and borrowed help from her regularly. However, by a strange coincidence, Yuuko also weakens Momo by taking away her power to cooperate in protecting the peace of Tama city.",
+    "popularity": 10.0044,
+    "poster_path": "/jTzpBCrmWfqOdF3XoanFfpwKYZU.jpg",
+    "first_air_date": "2019-07-12",
+    "softcore": true,
+    "name": "The Demon Girl Next Door",
+    "vote_average": 8,
+    "vote_count": 31
+  },
+  {
+    "adult": true,
+    "backdrop_path": "/xyh5AtlJ9jGduhKD7Km5Nf2gbCb.jpg",
+    "genre_ids": [
+      35
+    ],
+    "id": 609,
+    "origin_country": [
+      "US"
+    ],
+    "original_language": "en",
+    "original_name": "Green Acres",
+    "overview": "Green Acres is an American sitcom starring Eddie Albert and Eva Gabor as a couple who move from New York City to a rural country farm. Produced by Filmways as a sister show to Petticoat Junction, the series was first broadcast on CBS, from September 15, 1965 to April 27, 1971.\n\nReceiving solid ratings during its six-year run, Green Acres was cancelled in 1971 as part of the \"rural purge\" by CBS. The sitcom has been in syndication and is available in DVD and VHS releases. In 1997, the two-part episode \"A Star Named Arnold is Born\" was ranked #59 on TV Guide's 100 Greatest Episodes of All Time.",
+    "popularity": 12.9349,
+    "poster_path": "/1tCh5D0dyPw8tiknprgbljAAEPw.jpg",
+    "first_air_date": "1965-09-15",
+    "softcore": true,
+    "name": "Green Acres",
+    "vote_average": 7.193,
+    "vote_count": 75
+  },
+  {
+    "adult": true,
+    "backdrop_path": "/d42cBRD0DYDj55683K4bnMKCsh6.jpg",
+    "genre_ids": [
+      16
+    ],
+    "id": 124840,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "春恋*乙女",
+    "overview": "Together with his sister Umi, Akihito starts attending a former all-girls school which will soon be closed down, supposedly because of deteriorating birthrate.\n\n(These OVA's are based on the eroge visual novel Harukoi Otome ~En de Gokigenyou~ by BaseSon.)",
+    "popularity": 0,
+    "poster_path": "/jsAyjONa3K7QmloEiGFk61U8DXq.jpg",
+    "first_air_date": "2008-04-18",
+    "softcore": true,
+    "name": "Harukoi Otome",
+    "vote_average": 6.5,
+    "vote_count": 2
+  },
+  {
+    "adult": true,
+    "backdrop_path": null,
+    "genre_ids": [],
+    "id": 44248,
+    "origin_country": [],
+    "original_language": "en",
+    "original_name": "Hatsuinu The Animation",
+    "overview": "",
+    "popularity": 0.0468,
+    "poster_path": null,
+    "first_air_date": "",
+    "softcore": true,
+    "name": "Hatsuinu The Animation",
+    "vote_average": 5,
+    "vote_count": 1
+  },
+  {
+    "adult": true,
+    "backdrop_path": "/MoKEe6WHF5kU7nP64z58130sT9.jpg",
+    "genre_ids": [
+      16,
+      10765,
+      35
+    ],
+    "id": 44618,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "ぶっとび!! CPU",
+    "overview": "For three long years, Akira has been saving to buy his very own computer. So when the Model 9821 finally goes on sale, he races to the store only to discover that it sold out in just 5 minutes! Yet, as luck would have it, Akira also manages to stumble across a man who just happens to be willing to sell him the exact model he was looking for! Unfortunately, Akira doesn't look close enough at the packaging. Instead of the 9821, he ends up with a Model 2198 - a super-advanced, biomechanical computer girl named Mimi!",
+    "popularity": 1.4348,
+    "poster_path": "/A17BCb2yDrj5biBLEADG4bFOgdQ.jpg",
+    "first_air_date": "1997-04-25",
+    "softcore": true,
+    "name": "I Dream of Mimi",
+    "vote_average": 5.2,
+    "vote_count": 10
+  },
+  {
+    "adult": true,
+    "backdrop_path": "/qI0Qj9dwnFu9AygqQIBtip7n4bl.jpg",
+    "genre_ids": [
+      16
+    ],
+    "id": 73284,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "妹ぱらだいす!",
+    "overview": "Murakami Teruaki's new project is finally starting!\n\nThis new production of Murakami Teruaki, greatly known for his savage eroticism unrivaled in depictions of high-speed piston-like action and facial expressions accompanying orgasm, is, of all things, in the genre of \"Younger Sister Moe\"!\n\nIt has been decided that Murakami Teruaki will turn Moonstone Cherry's \"Imouto Paradise!\", a game with the concept of \"masturbate to cute girls,\" into an anime with the help of his direction!!\n\nThe lewd, cute younger sisters will now assertively bear down on you through the anime.",
+    "popularity": 0,
+    "poster_path": "/xXTZfRZ8ibCrr6s8aLMkr6D176a.jpg",
+    "first_air_date": "2011-12-09",
+    "softcore": true,
+    "name": "Imouto Paradise!",
+    "vote_average": 5.8,
+    "vote_count": 4
+  },
+  {
+    "adult": true,
+    "backdrop_path": "/5hsQveAT7M9GzaCvOmTjGUh2nbv.jpg",
+    "genre_ids": [
+      16,
+      10765
+    ],
+    "id": 103245,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "魔界天使ジブリール",
+    "overview": "Based on the game by Front Wing.\n\nWhen the summer break began, Jinno Naoto and Manabe Rika confessed their thought they had since their childhood and began to go out with each other. Suddenly a boy named Asmodeus appeared. He said he was a devil, and he tried to take Rika away. Naoto did his best to save Rika from Asmodeus, but he couldn't anything to do with devil's power. At that very moment, a girl Luvriel, who name herself an angel, came and saved them.",
+    "popularity": 0,
+    "poster_path": "/qEcJPyksKsETjcDpRHgTvrqjEiH.jpg",
+    "first_air_date": "2004-11-26",
+    "softcore": true,
+    "name": "Jiburiru: The Devil Angel",
+    "vote_average": 5,
+    "vote_count": 1
+  },
+  {
+    "adult": true,
+    "backdrop_path": null,
+    "genre_ids": [],
+    "id": 5218,
+    "origin_country": [
+      "US"
+    ],
+    "original_language": "en",
+    "original_name": "Kama Sutra",
+    "overview": "Kama Sutra was a softcore television show on Showtime.",
+    "popularity": 2.2484,
+    "poster_path": "/bb4czcqzSBf43SLmA5M3QCuukkH.jpg",
+    "first_air_date": "2000-06-24",
+    "softcore": true,
+    "name": "Kama Sutra",
+    "vote_average": 4.8,
+    "vote_count": 5
+  },
+  {
+    "adult": true,
+    "backdrop_path": null,
+    "genre_ids": [],
+    "id": 286367,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "Kanojo x Kanojo x Kanojo",
+    "overview": "Due to unavoidable circumstances, Haruomi is freeloading at his relatives', the Orifushi sisters', house. Since that day, his common everyday life has come to a screeching halt. The eldest sister is the gentle and maternal Natsumi. The second is Akina, a bright and cheerful girl for whom a smile is well-suited. The youngest sister is the bratty Mafuyu. The curtain rises on Haruomi's new life in the company of these three beautiful sisters.",
+    "popularity": 0,
+    "poster_path": "/iA70nDeykJ2Xfauc7LZqaa31WCY.jpg",
+    "first_air_date": "2009-12-25",
+    "softcore": true,
+    "name": "Kanojo x Kanojo x Kanojo",
+    "vote_average": 0,
+    "vote_count": 0
+  },
+  {
+    "adult": true,
+    "backdrop_path": "/cdY1KD6dFlWf0XB787RJLCaSqsE.jpg",
+    "genre_ids": [
+      16,
+      35
+    ],
+    "id": 200753,
+    "origin_country": [
+      "US"
+    ],
+    "original_language": "en",
+    "original_name": "Kite Man: Hell Yeah!",
+    "overview": "Lovable loser Kite Man and his new squeeze Golden Glider moonlight as criminals to support their foolish purchase of Noonan's, Gotham's seediest dive bar, where everybody knows your name, but not necessarily your secret identity!",
+    "popularity": 4.2523,
+    "poster_path": "/cebce4aQiO4gRLiILxoZbzWUoEJ.jpg",
+    "first_air_date": "2024-07-18",
+    "softcore": true,
+    "name": "Kite Man: Hell Yeah!",
+    "vote_average": 6.7,
+    "vote_count": 39
+  },
+  {
+    "adult": true,
+    "backdrop_path": "/pBS8AeGBbIoJ86xv7YkLRjVXv8H.jpg",
+    "genre_ids": [
+      16,
+      10765,
+      10759,
+      35
+    ],
+    "id": 45079,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "淫獣学園 La Blue Girl",
+    "overview": "It began centuries ago, when the Miroku ninja clan made a deal with the forces of the underworld, leading to centuries of struggle between rival clans. And now, after more than 600 years of peace, the denizens of the underworld are about to get a new boss.\n\nNow, 16-year-old ninja in training Midou Miko is entrusted with the family business: making sure that sex-starved demons stay out of humanity's way! What does a ninja do? Fight, with every battle skill and sexual sorcery she can muster!",
+    "popularity": 0,
+    "poster_path": "/j6HAt1BDV2K1iBTvcxwwrmBFlhi.jpg",
+    "first_air_date": "1992-06-26",
+    "softcore": true,
+    "name": "La Blue Girl",
+    "vote_average": 7,
+    "vote_count": 14
+  },
+  {
+    "adult": true,
+    "backdrop_path": "/oxhFYNzs0udAE42v5KbB8Akk44I.jpg",
+    "genre_ids": [
+      10764
+    ],
+    "id": 129500,
+    "origin_country": [
+      "US"
+    ],
+    "original_language": "en",
+    "original_name": "Next Level Chef",
+    "overview": "The next evolution in cooking competitions, as Gordon Ramsay has designed a one-of-a-kind culinary gauntlet, set on an iconic stage over three stories high, each floor contains a stunningly different kitchen. From the glistening top floor to the challenging bottom of the basement, the ingredients match the environment, because Ramsay believes the true test of great chefs is not only what they can do in the best of circumstances, but what kind of magic they can create in the worst!",
+    "popularity": 3.435,
+    "poster_path": "/wurkEbwnhkCeJiPJcCrDZThRx6j.jpg",
+    "first_air_date": "2022-01-02",
+    "softcore": true,
+    "name": "Next Level Chef",
+    "vote_average": 7.308,
+    "vote_count": 26
+  },
+  {
+    "adult": true,
+    "backdrop_path": "/v9SiDc7d7JHJtwmPahrRTrxf1Cj.jpg",
+    "genre_ids": [
+      16
+    ],
+    "id": 45236,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "ロリータアニメ",
+    "overview": "The Lolita Anime series was created by a studio called Wonder Kids. It contains many notable firsts, as the first erotic original video animation, depicting hentai scenes which include yuri, BDSM and lolicon characters. It ran from February 1984 to May 1985 and consisted of six episodes. An alternative name for this anime is Wonder Magazine Series and it was on a manga by Fumio Nakajima, which was serialized in the lolicon magazine Lemon People.",
+    "popularity": 0,
+    "poster_path": "/ldvrM5N8sKHnfeJpNz6FynxeHkz.jpg",
+    "first_air_date": "1984-02-21",
+    "softcore": true,
+    "name": "Lolita Anime",
+    "vote_average": 3.6,
+    "vote_count": 5
+  },
+  {
+    "adult": true,
+    "backdrop_path": null,
+    "genre_ids": [
+      10759,
+      16,
+      10765
+    ],
+    "id": 105920,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "魔法少女メルル",
+    "overview": "A newly trained young sorceress name Meruru gets lost in the forest in the middle of the training, and has numerous encounters with dangerous beasts.",
+    "popularity": 15.5259,
+    "poster_path": "/983wZExYw5LDmBvz69WXZBuFVYX.jpg",
+    "first_air_date": "1997-01-21",
+    "softcore": true,
+    "name": "Magic Woman M",
+    "vote_average": 0,
+    "vote_count": 0
+  },
+  {
+    "adult": true,
+    "backdrop_path": "/i5UgJEvHoJa3sPlAxqLPwC5g2aQ.jpg",
+    "genre_ids": [
+      16,
+      10765,
+      10759
+    ],
+    "id": 25115,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "まじかるカナン",
+    "overview": "Chihaya is an average high school student whose life turns upside down when she comes across Natsuki, a cute, rabbit-like creature that she takes in as a pet before finding out he can take human form and is from Evergreen, a parallel world full of nature and magic. He has come to the human world to retrieve five special stolen Seeds, each with the power to possess people and turn them into the embodiment of their desire. Chihaya is drafted into becoming Magical Warrior Carmine, Natsuki’s souped-up (and suped-up) lead partner and together they begin the quest to recover the Seeds, a task made more difficult by the arrivals of arrogant rival Cerulean Blue and Septem, a Magical Warrior from Evergreen who is oddly jealous of Chihaya.",
+    "popularity": 2.2155,
+    "poster_path": "/5W4v16VWZOeIahYW0CMIBkRRUsb.jpg",
+    "first_air_date": "2005-01-01",
+    "softcore": true,
+    "name": "Magical Canan",
+    "vote_average": 6.2,
+    "vote_count": 5
+  },
+  {
+    "adult": true,
+    "backdrop_path": "/yjArmrusJcyfKRa7QYDVRRGNDcD.jpg",
+    "genre_ids": [
+      16,
+      35
+    ],
+    "id": 117106,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "マジカルトワイライト",
+    "overview": "Tsukasa Tachibana is taking his final exams for the third time, but little does he know is that he's the test for three witches, and things go from bad to worse!",
+    "popularity": 0,
+    "poster_path": "/1aOLR7dxoOgHU6oi1hiY4p23kpv.jpg",
+    "first_air_date": "1994-07-08",
+    "softcore": true,
+    "name": "Magical Twilight",
+    "vote_average": 4.2,
+    "vote_count": 5
+  },
+  {
+    "adult": true,
+    "backdrop_path": "/89A8YQtov8pLITJGN9kvJGASC3d.jpg",
+    "genre_ids": [
+      16
+    ],
+    "id": 94769,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "メイプル カラーズ",
+    "overview": "Yoshijiro Saku has just arrived at his new school, Kouka Academy, which is known for its theatre activities. On his very first day, he starts a fight with Mirai Aoi – and is observed by Aizen, the head of the drama club, of all people! All of Ryojiro’s classmates are problem students themselves, and he had hoped to keep the other students at bay from the start. But far from it, he has now been ordered to lead his class into a competition against the drama club. Should they lose, they will all be expelled from school. But the supposed “classmates” are not very enthusiastic about their new leader and don’t think much of listening to Yoshijiro.",
+    "popularity": 0,
+    "poster_path": "/rqDHw5TldnMcEhvn7HpOyYLjCQe.jpg",
+    "first_air_date": "2004-12-25",
+    "softcore": true,
+    "name": "Maple Colors",
+    "vote_average": 10,
+    "vote_count": 1
+  },
+  {
+    "adult": true,
+    "backdrop_path": null,
+    "genre_ids": [
+      16
+    ],
+    "id": 44569,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "めい・King",
+    "overview": "MeiKing is a four-part erotic original video animation series, part of the Vanilla Series, set in a fantasy world.",
+    "popularity": 0,
+    "poster_path": "/7LaUOknXnib0osRTb9v1u1tfmAB.jpg",
+    "first_air_date": "1999-10-29",
+    "softcore": true,
+    "name": "MeiKing",
+    "vote_average": 0,
+    "vote_count": 0
+  },
+  {
+    "adult": true,
+    "backdrop_path": "/tjEqQKCg5sycINiGTFm5N7ewF8e.jpg",
+    "genre_ids": [
+      16
+    ],
+    "id": 296431,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "zh",
+    "original_name": "MEZZO FORTE",
+    "overview": "The target of hitgirl Mikura is a wealthy baseball team owner, but he turns out to be a powerful underworld boss. Mikura and her team are beset by countless heavily armed bodyguards and the boss' vicious daughter.",
+    "popularity": 0.4976,
+    "poster_path": "/1YZv3hWnTn9OFNTXFyDhsjN6rHi.jpg",
+    "first_air_date": "2000-05-25",
+    "softcore": true,
+    "name": "MEZZO FORTE",
+    "vote_average": 0,
+    "vote_count": 0
+  },
+  {
+    "adult": true,
+    "backdrop_path": null,
+    "genre_ids": [
+      16,
+      10759,
+      10765
+    ],
+    "id": 45505,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "ミッドナイトパンサー",
+    "overview": "The traveling musical group The Pussycats is the hottest thing around. Lou, Kei and Sonya are three, sexy singers with a legion of screaming fans in every town. But these pussycats have claws.\n\nSingers by day, assassins by night. Unbeknownst to their fans, The Pussy  Cats are also The Midnight Panthers - female assassins who will kill  anyone if the price is right! Their next target is a despotic king who  rules by fear and crushes dissension with an iron fist. But for one of  the Panthers, it's not just another job... it's personal.",
+    "popularity": 0,
+    "poster_path": "/sjVt3LfFthSeGXR6POt38LzueIw.jpg",
+    "first_air_date": "1998-08-25",
+    "softcore": true,
+    "name": "Midnight Panther",
+    "vote_average": 6.2,
+    "vote_count": 5
+  },
+  {
+    "adult": true,
+    "backdrop_path": "/jJrDcLj4vVCAnf3mqSakyPKrnF2.jpg",
+    "genre_ids": [
+      16,
+      18
+    ],
+    "id": 133048,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "乳母",
+    "overview": "To relieve herself of the pain of her unsuckled mother’s milk, Kyoko takes a job as a wet-nurse. But she is abruptly dismissed when she is found to be \"too attached\" to her young charge... Years later, Kyoko tells her teenaged daughter Marika that she breast-fed one of her classmates, a boy named Toji. Intrigued, Marika approaches Toji, and brings him home for dinner. Kyoko and Toji’s passion for each other is reignited, while Marika can’t get her new \"big brother\" out of her head. Discovering the truth about Toji and Kyoko, Marika demands that Toji choose between them. Little does she know that her mother has a way of becoming violently jealous...",
+    "popularity": 0,
+    "poster_path": "/t59blLgwPuuMU4L7DOJktg3MWhu.jpg",
+    "first_air_date": "2004-04-09",
+    "softcore": true,
+    "name": "Milk Money",
+    "vote_average": 7,
+    "vote_count": 4
+  },
+  {
+    "adult": true,
+    "backdrop_path": "/t3uLFPFJynNkmdGwQhqQIJ6IoDR.jpg",
+    "genre_ids": [
+      10751,
+      18
+    ],
+    "id": 208354,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "水色の時",
+    "overview": "The 15th NHK Asadora. Starring Shinobu Otake in a story about a young woman striving to become a doctor and her mother, who is a nurse. The first six-month Asadora. Average rating of 40.1%.",
+    "popularity": 8.1078,
+    "poster_path": "/c2zsKjcfV9DguQcrDMkbhMpj7wg.jpg",
+    "first_air_date": "1975-04-07",
+    "softcore": true,
+    "name": "Mizuiro no toki",
+    "vote_average": 0,
+    "vote_count": 0
+  },
+  {
+    "adult": true,
+    "backdrop_path": "/4cL8QkQ7zBz8ncM6MtCybZZgLh4.jpg",
+    "genre_ids": [
+      16
+    ],
+    "id": 96624,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "顔のない月",
+    "overview": "Suzuna is a young miko (Shintō priestess) who lives in a mansion in rural Japan, and who is in training for a forthcoming great rite. A marriage has been arranged for her, and her fiancé is brought to her home, much to her dismay. But the mansion may be haunted, and a strange curse seems to take possession of its inhabitants...",
+    "popularity": 0,
+    "poster_path": "/5DU687lEd0aOWOV7N8RY6yeKN5v.jpg",
+    "first_air_date": "2001-12-28",
+    "softcore": true,
+    "name": "Moonlight Lady",
+    "vote_average": 6.6,
+    "vote_count": 5
+  },
+  {
+    "adult": true,
+    "backdrop_path": "/zR4WOvCPZPWh4Sj8UxdyQ8fC6Mb.jpg",
+    "genre_ids": [
+      16
+    ],
+    "id": 77662,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "夜勤病棟",
+    "overview": "On a forbidden hospital ward, the head doctor performs madly erotic experiments, stripping the nursing staff of their uniforms, inhibitions and self-control... until even he is shocked by what he uncovers!",
+    "popularity": 0,
+    "poster_path": "/lPe4NMFZHAPNSqefGbi5PzoRck1.jpg",
+    "first_air_date": "2000-12-08",
+    "softcore": true,
+    "name": "Night Shift Nurses",
+    "vote_average": 7.6,
+    "vote_count": 10
+  },
+  {
+    "adult": true,
+    "backdrop_path": "/gIszAHv1zKzl7Ntmx516Rjou69Y.jpg",
+    "genre_ids": [
+      18,
+      16,
+      35
+    ],
+    "id": 45100,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "お金がないっ",
+    "overview": "Yukiya Ayase is a gentle, kindhearted, and innocent university student. The only relative he has left, his cousin Tetsuo, betrays Ayase with hopes of making an enormous profit to be able to pay off his debts. Somuku Kanou, a bad-tempered (though very rich) loan shark, comes to Ayase's rescue. Kanou apparently knows Ayase from something that happened between them in the past, but Ayase cannot remember who Kanou is, nor does he understand why he \"saved\" him. Love soon begins to grow between them.",
+    "popularity": 2.133,
+    "poster_path": "/vga3Ee86tA7y43c7WkGevPTdaQz.jpg",
+    "first_air_date": "2007-02-09",
+    "softcore": true,
+    "name": "No Money",
+    "vote_average": 4.429,
+    "vote_count": 7
+  },
+  {
+    "adult": true,
+    "backdrop_path": "/qHpAxjI6Vx84XObIdJbj3MPSxOa.jpg",
+    "genre_ids": [
+      16,
+      35
+    ],
+    "id": 155807,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "お元気クリニック",
+    "overview": "Whatever problem a patient may have with sex, the wacky Dr. Okeguri and his sexy nurse, Ruko, are here to help! Using a variety of unconventional methods and an extremely affectionate bedside manner, this team is devoted to bringing pleasure to those in pain and joy to those in despair.",
+    "popularity": 0,
+    "poster_path": "/2kouZlrtrtqlGdaLoctGRZP6A7o.jpg",
+    "first_air_date": "1992-01-21",
+    "softcore": true,
+    "name": "Ogenki Clinic Adventures",
+    "vote_average": 8,
+    "vote_count": 3
+  },
+  {
+    "adult": true,
+    "backdrop_path": null,
+    "genre_ids": [
+      16,
+      35
+    ],
+    "id": 44294,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "パピヨンローゼ",
+    "overview": "Because of the previous war, Kabucki-cho was devastated, and the owner abandoned his lingerie pub, \"Pallion,\" and opened \"New Papillion\" in Akihabara. During the war, Tsubomi, and her colleagues Anne and Shizuku lost their memories, and they began new lives in Akihabara.\n\nOn the other hand, the Susano, aliens who were invading the Earth, appeared. They turned a UMA (Unidentified Mysterious Animal) into a monster and make it raid on Akihabara. Rama the cat made Tsubomi and her buddies retrieve their memories, and let them fight against the monster as Lingerie Soldiers.",
+    "popularity": 1.1375,
+    "poster_path": "/1Q7NmfLCPAykNyZwFUhuMrIx9Fo.jpg",
+    "first_air_date": "2006-02-09",
+    "softcore": true,
+    "name": "Papillon Rose",
+    "vote_average": 3.3,
+    "vote_count": 3
+  },
+  {
+    "adult": true,
+    "backdrop_path": "/a3x2l33RgD9nkHVvFTYwRiTYXvY.jpg",
+    "genre_ids": [
+      16,
+      10765,
+      18,
+      35
+    ],
+    "id": 22131,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "プリズムアーク",
+    "overview": "The Sablum Empire has been attempting to take over the kingdom of Windland for many years, and are now plotting with the mercenaries Sister Hell and Darkness Knight to start a new offensive using powerful magical beings called Angels.\n\nHyaweh, a carefree yet talented swordsman, and Priecia, who just might be the lost princess of Windland, are enrolled at the Knight's Academy in Windland to hone their skill at swords and sorcery. There they meet many friends and allies who can help them protect their homeland from the impending invasion.",
+    "popularity": 2.4365,
+    "poster_path": "/lL86HOpgMm7UVTOVPblsJpVG84a.jpg",
+    "first_air_date": "2007-10-08",
+    "softcore": true,
+    "name": "Prism Ark",
+    "vote_average": 3.8,
+    "vote_count": 5
+  },
+  {
+    "adult": true,
+    "backdrop_path": null,
+    "genre_ids": [
+      18,
+      18
+    ],
+    "id": 44024,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "個人授業",
+    "overview": "Private Psycho Lesson is a hentai anime created by U-jin in 1996. It contains two episodes, both stories showcase Dr. Sara Iijima, a beautiful and buxom psychiatrist and her unique therapeutic abilities, as well as the adventures she gets into. There's also one volume of manga.",
+    "popularity": 0,
+    "poster_path": "/zW9lhfIyAx2hSiqR2Z2ja3Zfo5F.jpg",
+    "first_air_date": "1996-09-27",
+    "softcore": true,
+    "name": "Private Psycho Lesson",
+    "vote_average": 7,
+    "vote_count": 4
+  },
+  {
+    "adult": true,
+    "backdrop_path": "/5NVIijd8tReEDTXyO1rSrz4XTtS.jpg",
+    "genre_ids": [
+      10759,
+      16,
+      18,
+      10765
+    ],
+    "id": 26674,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "ソルティレイ",
+    "overview": "It’s been twelve years since the Blast Fall, an unexplained disaster that left countless dead and many more maimed. Society is divided and every citizen feels the burn, most of all the Resembles – people whose mangled bodies have been rebuilt with high-tech prosthetic devices. Bounty hunter Roy Revant has seen it all, walking alone in this shattered city. That is, until the day a strange little girl named Solty falls from the sky straight into his heart. The search for family turns into a search for meaning and those that wield harsh power over society won’t go unnamed for long. Roy and Solty may seek different things… But who wants to search for truth alone?",
+    "popularity": 3.3255,
+    "poster_path": "/u8ONAAB4eWjn9CkE8s0JPMdcOUN.jpg",
+    "first_air_date": "2005-10-07",
+    "softcore": true,
+    "name": "Solty Rei",
+    "vote_average": 6.5,
+    "vote_count": 14
+  },
+  {
+    "adult": true,
+    "backdrop_path": "/3T5LhDc3FOK2vVyKmymW1OTAzJ5.jpg",
+    "genre_ids": [
+      16
+    ],
+    "id": 204733,
+    "title": "Sensitive Pornograph",
+    "original_language": "ja",
+    "original_title": "センシティブ・ポルノグラフ",
+    "overview": "Featuring two short stories, the first is about two manga writers/artists with a ten year age difference, Seiji Yamada and Sono Hanasaki and their intimate love life and problems. The second story is about the strange incidents that happen to pet-sitter Ueno when he goes to take care of a pet rabbit named Aki, who he finds out is actually a human man.",
+    "popularity": 0,
+    "poster_path": "/m0mLVOIfnHrzdV5dAHAiKOh0ceV.jpg",
+    "release_date": "2004-12-20",
+    "softcore": true,
+    "video": false,
+    "vote_average": 4.1,
+    "vote_count": 4
+  },
+  {
+    "adult": true,
+    "backdrop_path": null,
+    "genre_ids": [
+      16
+    ],
+    "id": 126982,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "奈美SOS!",
+    "overview": "Nami Koishikawa's incredibly large breasts and luscious figure got her a lot of admirers, but she never really thought anything of it. Sure, she enjoyed wearing skimpy work uniforms that threatened to cause her breasts to pop out at any time, however those luscious curves get her into real trouble late one night when Nami rushes to the aid of an injured woman behind the restaurant where she works. The woman hands her a strange looking pendant and begs her to \"take her place\"...",
+    "popularity": 0,
+    "poster_path": "/cQzxXdFGIMTFBPRsV5PwYRoAfQD.jpg",
+    "first_air_date": "2003-10-25",
+    "softcore": true,
+    "name": "Nami SOS!",
+    "vote_average": 0,
+    "vote_count": 0
+  },
+  {
+    "adult": true,
+    "backdrop_path": "/tP0nNpdojnFbEgZRzDcG6K2vMkX.jpg",
+    "genre_ids": [
+      16
+    ],
+    "id": 45449,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "こわれもの",
+    "overview": "Slave Doll is a Japanese pornographic original video animation created by Otakey Sasaki and released in 2000. The series revolves around Aki, a busty android maid constructed by the Gene Corporation. Her function, besides being a household maid, is the collection of male genetic material through sexual means, after which it is saved, possibly for species preservation. Slave Doll was followed by a sequel, Slave Doll II released in 2001 and produced by Beam Entertainment.",
+    "popularity": 0,
+    "poster_path": "/9BEDxV9yNu2lLN78ZzmJOMvGyWO.jpg",
+    "first_air_date": "2000-05-20",
+    "softcore": true,
+    "name": "Slave Doll",
+    "vote_average": 5.25,
+    "vote_count": 4
+  },
+  {
+    "adult": true,
+    "backdrop_path": "/8qMf9xhOhCsHNHwuP5CIm8ovX4M.jpg",
+    "genre_ids": [
+      16
+    ],
+    "id": 90698,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "そらのいろ、みずのいろ",
+    "overview": "The story revolves around two high school girls. Asa Mizushima (水島朝 Mizushima Asa) is a transfer student who soon joins the swim club to get her mind off her parents' divorce. She is confronted by Hajime Saisho (最所弌 Saisho Hajime), a cocky high school student. He persuades Asa through photography to capture her beauty, which she takes a liking to, but not at first. Asa is soon taken in by Hajime and intercourse ensues. Natsume Sorayama (空山菜摘芽 Sorayama Natsume), the second girl, who appears younger than the other two characters, takes interest in gardening. She overhears Asa and the teasing Hajime in conversation while she is hidden in a sunflower garden (conveniently located beside the club pool). While they engage in sexual activity once again, Natsume takes part by her own free will.",
+    "popularity": 0,
+    "poster_path": "/umuED14CowEmmHaslNVSo1DTNuq.jpg",
+    "first_air_date": "2006-07-28",
+    "softcore": true,
+    "name": "Color of Sky, Color of Water",
+    "vote_average": 7.3,
+    "vote_count": 6
+  },
+  {
+    "adult": true,
+    "backdrop_path": null,
+    "genre_ids": [
+      16
+    ],
+    "id": 104363,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "義母",
+    "overview": "As a young boy, Yusuke came home to find his mother having sex with another man. His parents soon divorced after; seeing his mother's infidelity at a young age left Yusuke with hatred for not only his mother but for all women. Now, his father has remarried but is assigned to a distant office. Yusuke decides it is time to get his revenge on women through his new stepmother...",
+    "popularity": 0,
+    "poster_path": "/kPcWG4J5RKdqcTDAmviv9hDn02M.jpg",
+    "first_air_date": "2001-10-05",
+    "softcore": true,
+    "name": "Stepmother's Sin",
+    "vote_average": 7.8,
+    "vote_count": 5
+  },
+  {
+    "adult": true,
+    "backdrop_path": "/81a7olfaCTjhKznpM0NQt2jSsxA.jpg",
+    "genre_ids": [
+      16,
+      18
+    ],
+    "id": 74717,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "艶母",
+    "overview": "On the outside, it seems as if the Amamiya family of Enbo is a picture of happiness and stability; Yosuke is a successful businessman, having recently been remarried to a beautiful wife named Misako. Their son, Kazuhiko, is in college.\n\nBut for Misako, things aren't so fine and dandy: Kazuhiko is cold and distant toward his stepmother; the workaholic that is Yosuke doesn't satisfy his wife in the bedroom; and Misako receives menacing phone calls from an unknown stalker while the two are out. As Misako grows dissatisfied and her safe haven begins to crumble, she is drawn into a forbidden love that reveals her darkest and most illicit fantasies.",
+    "popularity": 0,
+    "poster_path": "/9HOrb2cziw00ImYw84raUX9f0Nd.jpg",
+    "first_air_date": "2003-11-24",
+    "softcore": true,
+    "name": "Taboo Charming Mother",
+    "vote_average": 8.3,
+    "vote_count": 26
+  },
+  {
+    "adult": true,
+    "backdrop_path": "/fOPvFCOddRFcueLOgLZu1kFdlOS.jpg",
+    "genre_ids": [
+      16,
+      10759,
+      80
+    ],
+    "id": 85172,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "THE レイプマン アニメ・バージョン",
+    "overview": "The main character and \"anti-hero\", The Rapeman, is a high school teacher by day and dispenses his surreal brand of \"justice\" at night under the business \"Rapeman Services\", which is co-run with his uncle, a former surgeon. He uses rape as his weapon. The business' motto is \"Righting wrongs through penetration\".",
+    "popularity": 0,
+    "poster_path": "/5uv1bDAZIsgt7Y1jtQw1rmCu5QM.jpg",
+    "first_air_date": "1994-10-28",
+    "softcore": true,
+    "name": "The Rapeman",
+    "vote_average": 5,
+    "vote_count": 5
+  },
+  {
+    "adult": true,
+    "backdrop_path": null,
+    "genre_ids": [],
+    "id": 15120,
+    "origin_country": [],
+    "original_language": "en",
+    "original_name": "Tournament of the Gods",
+    "overview": "Tournament of the Gods is a 3-episode anime OVA series based on a H-game by Alicesoft. It was condensed into a single 35-minute episode and released in the US as a subtitled white-cassette VHS by Pink Pineapple studio.",
+    "popularity": 0.0652,
+    "poster_path": "/ubuVb7B1ccbWpOSlEd0BfcP3gA2.jpg",
+    "first_air_date": "1997-01-01",
+    "softcore": true,
+    "name": "Tournament of the Gods",
+    "vote_average": 0,
+    "vote_count": 0
+  },
+  {
+    "adult": true,
+    "backdrop_path": "/oMyvAGupYvIbtoAfQicVuid8x0L.jpg",
+    "genre_ids": [
+      16,
+      10765
+    ],
+    "id": 84804,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "THE UROTSUKI",
+    "overview": "An immortal beast-man of supernatural lusts, Amano Jaku escapes prison to gratify his appetites at Meishin College. But the campus is not just a hotbed of luscious coeds - it's the breeding ground of a hideous monster! The Ultra God is Amano Jaku's nemesis, a vile killing machine, and the ancient harbinger of the coming apocalypse. Now, immortals will clash in a battle that will bathe the Earth in innocent blood!",
+    "popularity": 0,
+    "poster_path": "/tm374jKKQRwZHIZLuNkiU7D8v5Y.jpg",
+    "first_air_date": "2002-05-03",
+    "softcore": true,
+    "name": "Urotsukidōji: New Saga",
+    "vote_average": 6.5,
+    "vote_count": 4
+  },
+  {
+    "adult": true,
+    "backdrop_path": "/f9c7G7P1O7YM4wLLYtQqAysPi9d.jpg",
+    "genre_ids": [
+      16
+    ],
+    "id": 82764,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "セーラー戦士 ヴィーナス♥ファイブ",
+    "overview": "An evil empire of sex-crazed supernatural beings threatens to take over the world... and the Gold Star College Campus! A team of sexy super-heroines stand ready to defend the planet's virtue: The Venus Five!",
+    "popularity": 0,
+    "poster_path": "/9yBqgREZrDNy95EKGmP7GDzl2IB.jpg",
+    "first_air_date": "1994-11-11",
+    "softcore": true,
+    "name": "Venus 5",
+    "vote_average": 7,
+    "vote_count": 1
+  },
+  {
+    "adult": true,
+    "backdrop_path": null,
+    "genre_ids": [],
+    "id": 14128,
+    "origin_country": [
+      "US"
+    ],
+    "original_language": "en",
+    "original_name": "Video Game Vixens",
+    "overview": "Video Game Vixens was a special four-part TV show hosted by Hal Sparks on G4 that featured what the network considered to be \"the sexiest female video game characters of the year.\" The show had three judges: Seanbaby, Joy Giovanni, and Jake Bronstein. The show and awards were not continued in subsequent years.",
+    "popularity": 0.4259,
+    "poster_path": null,
+    "first_air_date": "2005-06-07",
+    "softcore": true,
+    "name": "Video Game Vixens",
+    "vote_average": 6.5,
+    "vote_count": 1
+  },
+  {
+    "adult": true,
+    "backdrop_path": "/6wRLHh2J1XAUKmQnUnjXmOoJTVI.jpg",
+    "genre_ids": [
+      16
+    ],
+    "id": 89547,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "Pia♥キャロットへようこそ!!2 DX",
+    "overview": "Kouji wants to work part-time, so, when he saw a cute girl with the Pia Carrot uniform, he tried to get a job there. When he's on the way, he accidentally bumped Azusa, and with some misunderstanding, they literally hate each other. What is the surprise of Kouji when he finds that she also got a job in the Pia Carrot, facing her daily. But as time passes, he will discover that 'hate' is not the appropriate word to describe his feelings...",
+    "popularity": 0.9027,
+    "poster_path": "/ukia1D92Vil59uRfJw6n1jKgfxA.jpg",
+    "first_air_date": "1999-12-18",
+    "softcore": true,
+    "name": "Welcome to Pia Carrot!! 2 DX",
+    "vote_average": 6,
+    "vote_count": 3
+  },
+  {
+    "adult": true,
+    "backdrop_path": null,
+    "genre_ids": [
+      16,
+      35
+    ],
+    "id": 43972,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "THE ガッツ!",
+    "overview": "Recently rejected because he looked like a wimp, Akiyoshi finds an ad for a construction site looking for workers. He decides to do physical labor in order to become stronger. However on this work site he finds the jobs to be a different kind of strenuous labor.",
+    "popularity": 0,
+    "poster_path": "/1GcHmyFFqDCziFU9spajYXRRygZ.jpg",
+    "first_air_date": "2005-02-25",
+    "softcore": true,
+    "name": "Women at Work",
+    "vote_average": 7.2,
+    "vote_count": 6
+  },
+  {
+    "adult": true,
+    "backdrop_path": "/bGCayB7iPyuflEuftp9EBfpdTbv.jpg",
+    "genre_ids": [
+      16,
+      10765,
+      35
+    ],
+    "id": 126243,
+    "origin_country": [
+      "JP"
+    ],
+    "original_language": "ja",
+    "original_name": "ワーズ・ワース",
+    "overview": "God created Light and Shadow and separated them with the power of the divine Words Worth Tablet. One day, the Words Worth Tablet shall be read and all will be understood, and Light and Shadow will join and become complete. But someone has shattered the Tablet. The Tribe of Light and the Tribe of Shadow each blame the other and war ensues for 100 years. The story revolves around the bumbling but very skilled Prince Astral of the Tribe of Shadow who may be the one to bring the Tribes together and restore peace.",
+    "popularity": 0,
+    "poster_path": "/w6JTXBQX1FTq1sOcBG38uLVGCAb.jpg",
+    "first_air_date": "1999-08-25",
+    "softcore": true,
+    "name": "Words Worth",
+    "vote_average": 6,
+    "vote_count": 9
+  }
+]

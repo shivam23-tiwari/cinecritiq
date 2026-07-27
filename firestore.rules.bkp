@@ -1,0 +1,149 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Global safety net: Deny all by default
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // --- Core Primitives ---
+    function isSignedIn() {
+      return request.auth != null;
+    }
+    
+    function isEmailVerified() {
+      // Allow Google users since email is automatically verified
+      return request.auth.token.email_verified == true || request.auth.token.firebase.sign_in_provider == 'google.com';
+    }
+
+    function isOwner(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
+
+    function incoming() {
+      return request.resource.data;
+    }
+
+    function existing() {
+      return resource.data;
+    }
+    
+    function isValidId(id) {
+      return id is string && id.size() > 0 && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    // --- Entity Validation Helpers ---
+    function isValidUser(data) {
+      return data.size() >= 3 && data.size() <= 10
+        && data.keys().hasAll(['uid', 'createdAt', 'updatedAt'])
+        && data.uid == request.auth.uid
+        && data.createdAt is timestamp
+        && data.updatedAt is timestamp
+        && ( !('displayName' in data) || (data.displayName is string && data.displayName.size() <= 100) )
+        && ( !('photoURL' in data) || (data.photoURL is string && data.photoURL.size() <= 1000) )
+        && ( !('email' in data) || (data.email is string && data.email.size() <= 150) )
+        && ( !('mobileNumber' in data) || (data.mobileNumber is string && data.mobileNumber.size() <= 20) )
+        && ( !('address' in data) || (data.address is string && data.address.size() <= 500) );
+    }
+
+    function isValidMovieAction(data, userId) {
+      return data.userId == userId;
+    }
+
+    function isValidReview(data, userId) {
+      return data.size() >= 7 && data.size() <= 9
+        && data.keys().hasAll(['movieId', 'userId', 'rating', 'content', 'likesCount', 'createdAt', 'updatedAt'])
+        && data.movieId is number
+        && data.userId == userId
+        && data.rating is number && data.rating >= 0.5 && data.rating <= 10
+        && data.content is string && data.content.size() <= 2000
+        && data.likesCount is number
+        && data.createdAt is timestamp
+        && data.updatedAt is timestamp
+        && ( !('userName' in data) || (data.userName is string && data.userName.size() <= 100) )
+        && ( !('userPhoto' in data) || (data.userPhoto is string && data.userPhoto.size() <= 1000) );
+    }
+
+    function isValidReviewUpdateAction(validDiffKeys) {
+      return incoming().diff(existing()).affectedKeys().hasOnly(validDiffKeys);
+    }
+    
+    function isValidReviewLike(data, userId) {
+      return data.size() == 2
+        && data.keys().hasAll(['userId', 'createdAt'])
+        && data.userId == userId
+        && data.createdAt is timestamp;
+    }
+
+    // --- Collections ---
+
+    match /users/{userId} {
+      allow read: if isValidId(userId);
+      allow create: if isOwner(userId) && isValidId(userId) && isValidUser(incoming()) && incoming().createdAt == request.time && incoming().updatedAt == request.time;
+      allow update: if isOwner(userId) && isValidId(userId) && isValidUser(incoming())
+                    && ( !('createdAt' in existing()) || incoming().createdAt == existing().createdAt )
+                    && incoming().uid == existing().uid;
+      allow delete: if false;
+
+      match /movieActions/{actionId} {
+        allow read: if isOwner(userId) || (isSignedIn() && resource.data.actionType == 'review'); // Allow reviews if any, but actually reviews are top level
+        // Better: only owner can read their actions (privacy for watchlist/favorites)
+        allow list, get: if isOwner(userId);
+        allow create: if isOwner(userId) && isValidId(actionId) && isValidMovieAction(incoming(), userId)
+                      && incoming().createdAt == request.time;
+        allow update: if false; // Actions are immutable (either exist or deleted)
+        allow delete: if isOwner(userId) && isValidId(actionId);
+      }
+
+      match /notes/{noteId} {
+        allow get, list: if isOwner(userId);
+        allow create: if isOwner(userId) && isValidId(noteId)
+                      && incoming().size() >= 2 && incoming().size() <= 3
+                      && incoming().keys().hasAll(['text', 'createdAt'])
+                      && incoming().text is string && incoming().text.size() <= 5000
+                      && incoming().createdAt == request.time;
+        allow update: if false; 
+        allow delete: if isOwner(userId) && isValidId(noteId);
+      }
+    }
+
+    match /reviews/{reviewId} {
+      // Anyone can read reviews
+      allow read: if true;
+      allow list: if true;
+      
+      allow create: if isSignedIn() && isValidId(reviewId) && isValidReview(incoming(), request.auth.uid)
+                    && incoming().createdAt == request.time
+                    && incoming().updatedAt == request.time
+                    && incoming().likesCount == 0;
+                    
+      allow update: if isSignedIn() && isValidId(reviewId) && isValidReview(incoming(), existing().userId)
+                    && incoming().createdAt == existing().createdAt
+                    && incoming().updatedAt == request.time
+                    && incoming().userId == existing().userId
+                    && incoming().movieId == existing().movieId
+                    && (
+                      // Action: Edit Review Content
+                      (isOwner(existing().userId) && isValidReviewUpdateAction(['content', 'rating', 'updatedAt'])) ||
+                      // Action: Like Counter Update (Increment/Decrement)
+                      (isValidReviewUpdateAction(['likesCount', 'updatedAt']) && (incoming().likesCount == existing().likesCount + 1 || incoming().likesCount == existing().likesCount - 1))
+                    );
+                    
+      allow delete: if isOwner(existing().userId) && isValidId(reviewId);
+
+      match /likes/{userId} {
+        allow read: if isSignedIn() && isValidId(userId);
+        // Note: Creating/Deleting a like must atomic with likesCount update on the review, but existsAfter is tricky on client. 
+        // We ensure atomicity on the client using batches. The rules enforce type and scope.
+        allow create: if isOwner(userId) && isValidId(userId) && isValidReviewLike(incoming(), request.auth.uid)
+                      && incoming().createdAt == request.time
+                      // Optionally enforce atomicity (requires getAfter which is slow/costly). We'll trust batching but restrict data shape.
+                      // && getAfter(/databases/$(database)/documents/reviews/$(reviewId)).data.likesCount == existing review likesCount + 1 -- skipping to avoid high cost
+                      ;
+        allow update: if false; // Likes are just created or deleted
+        allow delete: if isOwner(userId) && isValidId(userId);
+      }
+    }
+  }
+}

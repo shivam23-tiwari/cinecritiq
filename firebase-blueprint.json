@@ -1,0 +1,84 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "User profile data",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string" },
+        "displayName": { "type": "string" },
+        "photoURL": { "type": "string" },
+        "email": { "type": "string" },
+        "createdAt": { "type": "number", "description": "Server timestamp" },
+        "updatedAt": { "type": "number", "description": "Server timestamp" }
+      },
+      "required": ["uid", "createdAt", "updatedAt"]
+    },
+    "MovieAction": {
+      "title": "MovieAction",
+      "description": "User action on a movie (favorite, watchlist)",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "movieId": { "type": "number" },
+        "actionType": { "type": "string", "enum": ["favorite", "watchlist"] },
+        "movieData": {
+          "type": "object",
+          "properties": {
+            "title": { "type": "string", "description": "Title or empty if not present" },
+            "poster_path": { "type": "string", "description": "Poster path or empty if not present" },
+            "release_date": { "type": "string", "description": "Release date or empty if not present" },
+            "vote_average": { "type": "number" }
+          }
+        },
+        "createdAt": { "type": "number", "description": "Server timestamp" }
+      },
+      "required": ["userId", "movieId", "actionType", "createdAt"]
+    },
+    "Review": {
+      "title": "Review",
+      "description": "User review for a movie",
+      "type": "object",
+      "properties": {
+        "movieId": { "type": "number" },
+        "userId": { "type": "string" },
+        "userName": { "type": "string" },
+        "userPhoto": { "type": "string" },
+        "rating": { "type": "number" },
+        "content": { "type": "string" },
+        "likesCount": { "type": "number" },
+        "createdAt": { "type": "number", "description": "Server timestamp" },
+        "updatedAt": { "type": "number", "description": "Server timestamp" }
+      },
+      "required": ["movieId", "userId", "rating", "content", "likesCount", "createdAt", "updatedAt"]
+    },
+    "ReviewLike": {
+      "title": "ReviewLike",
+      "description": "User like on a review",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "createdAt": { "type": "number" }
+      },
+      "required": ["userId", "createdAt"]
+    }
+  },
+  "firestore": {
+    "users/{userId}": {
+      "schema": "User",
+      "description": "Public user profile"
+    },
+    "users/{userId}/movieActions/{actionId}": {
+      "schema": "MovieAction",
+      "description": "User's favorites and watchlist items"
+    },
+    "reviews/{reviewId}": {
+      "schema": "Review",
+      "description": "Reviews written for movies"
+    },
+    "reviews/{reviewId}/likes/{userId}": {
+      "schema": "ReviewLike",
+      "description": "Tracks who liked a review"
+    }
+  }
+}

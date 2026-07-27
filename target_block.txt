@@ -1,0 +1,96 @@
+      <div className="bg-[#141414] border border-white/10 rounded-3xl p-8 mb-12 flex flex-col md:flex-row items-center md:items-start gap-8 relative overflow-hidden">
+        <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-r from-[#E50914]/20 to-transparent opacity-50"></div>
+        
+        <div className="relative z-10 w-32 h-32 rounded-full overflow-hidden bg-[#2a2a2a] border-4 border-[#141414] shadow-2xl flex-shrink-0">
+          <img src={profileUser.photoURL || `https://api.dicebear.com/7.x/avataaars/svg?seed=${profileUser.displayName || profileUser.email || "user"}`} alt={profileUser.displayName || "User"} className="w-full h-full object-cover" />{false ? (
+            <img src={profileUser.photoURL || `https://api.dicebear.com/7.x/avataaars/svg?seed=${profileUser.displayName || profileUser.email || 'user'}`} alt={profileUser.displayName} className="w-full h-full object-cover" />
+          ) : (
+            <div className="w-full h-full flex items-center justify-center text-4xl font-bold text-white/50 bg-gradient-to-br from-gray-800 to-black">
+              {(profileUser.displayName || profileUser.email || '?')[0].toUpperCase()}
+            </div>
+          )}
+        </div>
+
+        <div className="relative z-10 flex-1 text-center md:text-left">
+          <div className="flex flex-col md:flex-row items-center gap-3">
+            <h1 className="text-3xl md:text-4xl font-black text-white flex flex-wrap items-center justify-center md:justify-start gap-2">
+              {profileUser.displayName || 'Movie Fan'}
+              {profileUser.isPremium && (
+                <Crown className="w-6 h-6 text-[#D4AF37] fill-[#D4AF37]"  />
+              )}
+              {profileUser.mcqWinnerStarUntil && typeof profileUser.mcqWinnerStarUntil.toMillis === 'function' && profileUser.mcqWinnerStarUntil.toMillis() > Date.now() && (
+                <span className="text-sm px-2 py-1 bg-yellow-500/20 text-yellow-500 rounded font-bold uppercase tracking-wider" >
+                  GOAT
+                </span>
+              )}
+            </h1>
+          </div>
+          
+          <div className="flex flex-col gap-1 mt-2">
+            {profileUser.email && (
+              <p className="text-white/40 text-sm">{profileUser.email}</p>
+            )}
+            {profileUser.instagramUsername && (
+              <a href={`https://www.instagram.com/${profileUser.instagramUsername.replace('@', '')}/`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-[#E1306C] hover:text-white transition-colors text-sm w-max mx-auto md:mx-0">
+                <Instagram className="w-4 h-4" />
+                {profileUser.instagramUsername.startsWith('@') ? profileUser.instagramUsername : `@${profileUser.instagramUsername}`}
+              </a>
+            )}
+            
+            <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 mt-2">
+              <div className="flex items-center gap-1.5">
+                <span className="text-white font-bold text-sm">{followersCount}</span>
+                <span className="text-white/50 text-sm">Followers</span>
+              </div>
+              <div className="flex items-center gap-1.5">
+                <span className="text-white font-bold text-sm">{followingCount}</span>
+                <span className="text-white/50 text-sm">Following</span>
+              </div>
+              <div className="flex items-center gap-1.5">
+                <span className="text-white font-bold text-sm">{postsCount}</span>
+                <span className="text-white/50 text-sm">Posts</span>
+              </div>
+            </div>
+
+            <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 mt-2">
+               <div className="flex items-center gap-1.5">
+                  <span className="text-white/50 text-sm">Status:</span>
+                  <span className={`text-sm font-bold ${profileUser.isPremium ? 'text-[#D4AF37]' : 'text-gray-300'}`}>
+                     {profileUser.isPremium ? 'Pro State' : 'Normal State'}
+                  </span>
+               </div>
+               <div className="flex items-center gap-1.5">
+                  <span className="text-white/50 text-sm">Activity Level:</span>
+                  <div className="flex">
+                     {[1,2,3,4,5].map(star => (
+                       <Star key={star} className={`w-3.5 h-3.5 ${star <= Math.min(5, Math.ceil((watched.length + ratings.length) / 5)) ? 'text-[#E50914] fill-[#E50914]' : 'text-white/20'}`} />
+                     ))}
+                  </div>
+               </div>
+            </div>
+          </div>
+        </div>
+
+        {currentUser && currentUser.uid !== profileUser.id && (
+          <div className="relative z-10 md:self-center w-full md:w-auto mt-4 md:mt-0">
+            <button
+              onClick={handleFollowToggle}
+              disabled={followLoading}
+              className={`w-full md:w-auto px-8 py-3 rounded-full font-bold transition-all flex items-center justify-center gap-2 ${
+                isFollowing 
+                  ? 'bg-white/10 text-white hover:bg-white/20 border border-white/20' 
+                  : 'bg-[#E50914] text-white hover:bg-[#b80710] shadow-[0_0_20px_rgba(229,9,20,0.4)]'
+              } disabled:opacity-50`}
+            >
+              {followLoading ? (
+                <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+              ) : (
+                <>
+                  <Users className="w-5 h-5" />
+                  {isFollowing ? 'Following' : isFollower ? 'Follow Back' : 'Follow'}
+                </>
+              )}
+            </button>
+          </div>
+        )}
+      </div>

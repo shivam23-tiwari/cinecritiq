@@ -1,0 +1,301 @@
+  const [followingCount, setFollowingCount] = useState(0);
+  const [sortOption, setSortOption] = useState<'newest' | 'oldest' | 'title' | 'rating'>('newest');
+  const [filterDecade, setFilterDecade] = useState('');
+  const [filterGenre, setFilterGenre] = useState('');
+  const [filterService, setFilterService] = useState('');
+  const [filterRating, setFilterRating] = useState('');
+
+
+  const [hasInitialized, setHasInitialized] = useState(false);
+
+  useEffect(() => { console.log('useEffect Profile', new Error().stack.split('\n')[1]);
+    if (!loading && !user) {
+      navigate('/');
+    }
+  }, [user, loading, navigate]);
+
+  useEffect(() => {
+    if (userData && !hasInitialized) {
+      setProfileData({
+        displayName: userData.displayName || user?.displayName || '',
+        email: userData.email || user?.email || '',
+        photoURL: userData.photoURL || user?.photoURL || '',
+        mobileNumber: userData.mobileNumber || '',
+        instagramUsername: userData.instagramUsername || '',
+        isPremium: userData.isPremium || false,
+        mcqWinnerStarUntil: userData.mcqWinnerStarUntil || null
+      });
+      setHasInitialized(true);
+    } else if (!userData && user && !hasInitialized) {
+      setProfileData(prev => ({
+        ...prev,
+        displayName: user.displayName || '',
+        photoURL: user.photoURL || ''
+      }));
+    }
+  }, [userData, user, hasInitialized]);
+
+  useEffect(() => { console.log('useEffect Profile', new Error().stack.split('\n')[1]);
+    if (user && hasInitialized) {
+      // Fetch extended profile data (followers/stats/self-heal)
+      const fetchExtendedProfile = async () => {
+        try {
+          const userRef = doc(db, 'users', user.uid);
+          const userSnap = await getDoc(userRef);
+          
+          let currentDisplayName = user.displayName || '';
+          let currentPhotoURL = user.photoURL || '';
+          
+          if (userSnap.exists()) {
+            const data: any = userSnap.data();
+            currentDisplayName = data.displayName || currentDisplayName;
+            currentPhotoURL = data.photoURL || currentPhotoURL;
+          }
+
+          // Self-heal: check if posts have wrong name
+          const { updateDoc } = await import('../lib/firestore-wrapper');
+          const postsQ = query(collection(db, 'posts'), where('userId', '==', user.uid));
+          const postsSnap = await getDocs(postsQ);
+          let needsUpdate = false;
+          const updates: any[] = [];
+          
+          postsSnap.forEach(postDoc => {
+             const data: any = postDoc.data();
+             if (data.userName !== currentDisplayName || data.userPhoto !== currentPhotoURL) {
+                needsUpdate = true;
+                updates.push(updateDoc(doc(db, 'posts', postDoc.id), {
+                   userName: currentDisplayName,
+                   userPhoto: currentPhotoURL
+                }));
+             }
+          });
+          
+          const reviewsQ = query(collection(db, 'reviews'), where('userId', '==', user.uid));
+          const reviewsSnap = await getDocs(reviewsQ);
+          reviewsSnap.forEach(reviewDoc => {
+             const data: any = reviewDoc.data();
+             if (data.userName !== currentDisplayName || data.userPhoto !== currentPhotoURL) {
+                needsUpdate = true;
+                updates.push(updateDoc(doc(db, 'reviews', reviewDoc.id), {
+                   userName: currentDisplayName,
+                   userPhoto: currentPhotoURL
+                }));
+             }
+          });
+          
+          if (needsUpdate && updates.length > 0) {
+             await Promise.all(updates);
+             console.log("Self-healed user posts and reviews names.");
+          }
+
+          const followersQuery = query(collection(db, `users/${user.uid}/followers`));
+          const followingQuery = query(collection(db, `users/${user.uid}/following`));
+          
+          const [followersSnap, followingSnap] = await Promise.all([
+            getDocs(followersQuery).catch(() => ({ size: 0 })),
+            getDocs(followingQuery).catch(() => ({ size: 0 }))
+          ]);
+          
+          setFollowersCount(followersSnap.size);
+          setFollowingCount(followingSnap.size);
+        } catch (e) {
+          if (!String(e).includes('Quota limit exceeded') && !(e?.message || "").includes('Quota limit exceeded')) {
+            console.error("Error fetching extended profile:", e);
+          } else { window.dispatchEvent(new CustomEvent('firebase-quota-exceeded')); }
+        }
+      };
+
+      fetchExtendedProfile();
+
+      
+
+
+  const fetchUserPosts = async () => {
+         try {
+            const postsQ = query(collection(db, 'posts'), where('userId', '==', user.uid));
+            const postsSnap = await getDocs(postsQ);
+            const postsList = postsSnap.docs.map(doc => ({ id: doc.id, ...doc.data(), feedType: 'post' }));
+            
+            const logsQ = query(collection(db, 'logs'), where('userId', '==', user.uid));
+            const logsSnap = await getDocs(logsQ);
+            const logsList = logsSnap.docs.map(doc => ({ id: doc.id, ...doc.data(), feedType: 'log' }));
+            
+            const combined = [...postsList, ...logsList];
+            
+            // Sort by createdAt desc
+            combined.sort((a, b) => ((b as any).createdAt?.toMillis() || 0) - ((a as any).createdAt?.toMillis() || 0));
+            setUserPosts(combined);
+         } catch (e) {
+            if (!String(e).includes('Quota limit exceeded') && !(e?.message || "").includes('Quota limit exceeded')) {
+              console.error("Failed to fetch posts/logs", e);
+            } else { window.dispatchEvent(new CustomEvent('firebase-quota-exceeded')); }
+         }
+      };
+      fetchUserPosts();
+
+      const fetchGlobalReviews = async () => {
+         try {
+            const reviewsQ = query(collection(db, 'reviews'), where('userId', '==', user.uid));
+            const snap = await getDocs(reviewsQ);
+            const reviewsList = await Promise.all(snap.docs.map(async doc => {
+               const data = doc.data();
+               let title = 'Unknown Movie';
+               let poster_path = null;
+               try {
+                 const tmdbData = await fetchFromTmdb(`/movie/${data.movieId}`);
+                 if (tmdbData && (tmdbData.title || tmdbData.name)) {
+                   title = tmdbData.title || tmdbData.name;
+                   poster_path = tmdbData.poster_path;
+                 } else {
+                   const tmdbSeries = await fetchFromTmdb(`/tv/${data.movieId}`);
+                   if (tmdbSeries && (tmdbSeries.name || tmdbSeries.title)) {
+                     title = tmdbSeries.title || tmdbSeries.name;
+                     poster_path = tmdbSeries.poster_path;
+                   }
+                 }
+               } catch(e) {}
+               return { id: doc.id, title, poster_path, ...data };
+            }));
+            setUserGlobalReviews(reviewsList);
+         } catch (e) {
+            console.error("Failed to fetch global reviews", e);
+         }
+      };
+      fetchGlobalReviews();
+      
+      const fetchActions = async () => {
+         try {
+            const q = query(collection(db, `users/${user.uid}/movieActions`));
+            let snap = null;
+            try {
+               snap = await getDocs(q);
+            } catch (e) {
+               handleFirestoreError(e, OperationType.LIST, `users/${user.uid}/movieActions`);
+            }
+            
+            // Also fetch from legacy collections just in case
+            const legacyCollections = ['favorites', 'watchlist', 'watched', 'ratings', 'diary'];
+            const legacyPromises = legacyCollections.map(colName => 
+               getDocs(query(collection(db, `users/${user.uid}/${colName}`))).catch(() => null)
+            );
+            const legacySnaps = await Promise.all(legacyPromises);
+            
+            const favsMap = new Map();
+            const watchMap = new Map();
+            const seenMap = new Map();
+            const rateMap = new Map();
+            const diaryMap = new Map();
+            
+            const processDocs = (docs: any[], defaultType?: string) => {
+               docs.forEach((doc) => {
+                  const data = doc.data();
+                  let movieObj = {
+                     id: data.movieId || data.id || parseInt(doc.id) || doc.id.replace(defaultType + '_', ''),
+                     title: data.movieData?.title || data.movieData?.name || data.title || data.name,
+                     poster_path: data.movieData?.poster_path || data.poster_path,
+                     vote_average: data.movieData?.vote_average || data.vote_average,
+                     release_date: data.movieData?.release_date || data.movieData?.first_air_date || data.release_date || data.first_air_date,
+                     media_type: data.mediaType || data.movieData?.media_type || data.media_type || "movie"
+                  };
+                  let type = data.actionType || defaultType;
+                  if (!type) {
+                     if (doc.id.startsWith('watched_')) type = 'watched';
+                     else if (doc.id.startsWith('watchlist_')) type = 'watchlist';
+                     else if (doc.id.startsWith('rated_') || doc.id.startsWith('rating_')) type = 'rated';
+                     else if (doc.id.startsWith('diary_')) type = 'diary';
+                     else type = 'favorite';
+                  }
+                  
+                  if (type === 'favorite') favsMap.set(String(movieObj.id), movieObj);
+                  if (type === 'watchlist') watchMap.set(String(movieObj.id), movieObj);
+                  if (type === 'watched') seenMap.set(String(movieObj.id), movieObj);
+                  if (type === 'rated') rateMap.set(String(movieObj.id), { ...movieObj, rating: data.rating });
+                  if (type === 'diary') diaryMap.set(String(movieObj.id), { ...movieObj, text: data.text, createdAt: data.createdAt?.toDate() });
+               });
+            };
+            
+            if (snap && snap.docs) {
+               processDocs(snap.docs);
+            }
+            
+            legacySnaps.forEach((lSnap, idx) => {
+               if (lSnap && lSnap.docs) {
+                  processDocs(lSnap.docs, legacyCollections[idx] === 'favorites' ? 'favorite' : legacyCollections[idx]);
+               }
+            });
+            
+            const filterUntitled = (m: any) => {
+               const t = String(m.title || m.name || '').toLowerCase();
+               return t === '' || !t.includes('untitled');
+            };
+            
+            setFavorites(Array.from(favsMap.values()).filter(filterUntitled));
+            setWatchlist(Array.from(watchMap.values()).filter(filterUntitled));
+            setWatched(Array.from(seenMap.values()).filter(filterUntitled));
+            setRatings(Array.from(rateMap.values()).filter(filterUntitled));
+                        setDiary(Array.from(diaryMap.values()));
+            
+            // Sync stats to user doc
+            if (user && user.uid) {
+              try {
+                  const finalWatched = Array.from(seenMap.values()).filter(filterUntitled);
+                  const finalRatings = Array.from(rateMap.values()).filter(filterUntitled);
+                  
+                  const allMoviesMap = new Map();
+                  const addToAll = (m: any) => {
+                     if (!allMoviesMap.has(String(m.id))) {
+                        allMoviesMap.set(String(m.id), { ...m, rating: 0, isFav: false });
+                     }
+                  };
+                  Array.from(seenMap.values()).forEach(addToAll);
+                  Array.from(rateMap.values()).forEach(addToAll);
+                  Array.from(favsMap.values()).forEach(addToAll);
+                  Array.from(diaryMap.values()).forEach(addToAll);
+                  
+                  Array.from(favsMap.values()).forEach((f: any) => {
+                     if (allMoviesMap.has(String(f.id))) {
+                        allMoviesMap.get(String(f.id)).isFav = true;
+                     }
+                  });
+                  
+                  Array.from(rateMap.values()).forEach((r: any) => {
+                     if (allMoviesMap.has(String(r.id))) {
+                        allMoviesMap.get(String(r.id)).rating = r.rating || 0;
+                     }
+                  });
+                  
+                  const topFavorites = Array.from(allMoviesMap.values()).sort((a: any, b: any) => {
+                     if ((b.rating || 0) !== (a.rating || 0)) {
+                        return (b.rating || 0) - (a.rating || 0);
+                     }
+                     if (b.isFav !== a.isFav) {
+                        return b.isFav ? 1 : -1;
+                     }
+                     return (b.createdAt || 0) - (a.createdAt || 0);
+                  }).slice(0, 4).map((m: any) => ({
+                     id: m.id,
+                     posterPath: customPosters?.[m.id] || m.poster_path || m.posterPath || null
+                  }));
+
+                  await setDoc(doc(db, 'users', user.uid), {
+                      stats: { watched: finalWatched.length, rated: finalRatings.length },
+                      topFavorites
+                  }, { merge: true });
+              } catch (e) { console.error('Failed to sync user stats', e); }
+            }
+         } catch (error) {
+            if (!String(error).includes('Quota limit exceeded') && !(error?.message || "").includes('Quota limit exceeded')) {
+               console.error(error);
+            } else { window.dispatchEvent(new CustomEvent('firebase-quota-exceeded')); }
+         } finally {
+            setFetching(false);
+         }
+      };
+      
+      fetchActions();
+    }
+  }, [user]);
+
+  const handleSearchMovieForDiary = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!diarySearchText.trim()) return;
